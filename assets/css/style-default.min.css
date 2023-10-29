@@ -7091,8 +7091,8 @@ button:hover:after {
 }
 
 .lgx-header .lgx-navbar .lgx-logo {
-  -webkit-animation-name: fadeInRight;
-  animation-name: fadeInRight;
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
   -webkit-transform-origin: center;
   transform-origin: center;
   animation-duration: 0.4s;
@@ -7427,8 +7427,45 @@ button:hover:after {
     transform: none;
   }
 }
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
 
 @media (max-width: 991px) {
+  .navbar-header {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  .lgx-header .lgx-navbar {
+    margin-bottom: 0;
+    border: none;
+    background: 0 0;
+    border-radius: 0;
+    display: block;
+    align-items: center;
+  }
+
   .lgx-header .lgx-navbar .lgx-logo-fixed a img {
     padding: 2.6rem 1.5rem 3rem;
     max-width: 100px;
@@ -7543,14 +7580,14 @@ button:hover:after {
   }
 
   .navbar-default .navbar-toggle span {
-    background-color: #554bb9 !important;
+    background-color: #fefefe !important;
     width: 26px;
     height: 3px;
   }
 
   .navbar-default .navbar-toggle:focus,
   .navbar-default .navbar-toggle:hover {
-    background-color: #554bb9;
+    background-color: #1f1e2b;
   }
 
   .navbar-default .navbar-toggle:focus span,
@@ -7755,6 +7792,7 @@ button:hover:after {
 
 .lgx-banner-info-area {
   display: flex;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .lgx-banner-info {
@@ -7951,7 +7989,6 @@ button:hover:after {
   font-size: 4.2rem;
   line-height: 6.300000000000001rem;
   display: block;
-  opacity: 0.8;
 }
 
 .lgx-banner-info-date {
@@ -8267,7 +8304,7 @@ button:hover:after {
   }
 
   .lgx-banner .lgx-inner {
-    padding: 8rem 0;
+    padding: 4rem 0rem 2rem 0rem;
   }
 
   .slider-text-single figure img {
@@ -9699,7 +9736,7 @@ button:hover:after {
 }
 
 .lgx-single-speaker2 {
-  margin-bottom: 4.2rem;
+  margin-bottom: 4rem;
   -webkit-transition: all 0.3s ease-in-out 0s;
   -moz-transition: all 0.3s ease-in-out 0s;
   -o-transition: all 0.3s ease-in-out 0s;
@@ -9836,12 +9873,13 @@ button:hover:after {
 }
 
 .lgx-single-speaker3 .speaker-info {
-  padding: 1.5rem 1rem 2rem;
+  padding: 1rem 1rem 2rem;
+  border-radius: 11px;
 }
 
 .lgx-single-speaker3:hover figure {
-  background: #554bb9;
-  border-radius: 0;
+  background: #eeeeee;
+  box-shadow: none;
 }
 
 .lgx-single-speaker3:hover figure a.profile-img img {
@@ -10024,11 +10062,11 @@ button:hover:after {
   background: #efa506;
 }
 
-.lgx-tab .lgx-nav-colorful li:nth-child(2) {
+.lgx-tab .lgx-nav-colorful li:nth-child(3) {
   background: #ff8a00;
 }
 
-.lgx-tab .lgx-nav-colorful li:nth-child(3) {
+.lgx-tab .lgx-nav-colorful li:nth-child(2) {
   background: #00b9ff;
 }
 
@@ -10041,7 +10079,7 @@ button:hover:after {
 }
 
 .lgx-tab .lgx-nav-colorful .active {
-  background: #554bb9 !important;
+  background: rgba(0, 0, 0, 0.5) !important;
 }
 
 .lgx-tab .lgx-nav-colorful .active a:focus,
@@ -10096,7 +10134,7 @@ button:hover:after {
 
 .lgx-tab .nav-pills .active {
   position: relative;
-  border-radius: 0;
+  border-radius: 10px;
   background: 0 0;
 }
 
@@ -10181,6 +10219,7 @@ button:hover:after {
 
 .lgx-tab2 .lgx-nav-colorful li {
   padding: 1.5rem 5px !important;
+  border-radius: 10px;
 }
 
 .lgx-tab2 .lgx-nav-colorful .active::before {
@@ -13999,6 +14038,7 @@ blockquote.lgx-testi-single:before {
 
   .lgx-btn {
     padding: 1rem 2.6rem;
+    border-radius: 10px;
   }
 
   .lgx-banner-info-circle .info-circle-inner {
@@ -14021,9 +14061,9 @@ blockquote.lgx-testi-single:before {
   }
 
   .lgx-banner-info-area {
-    display: block;
+    display: flex;
+    flex-direction: column-reverse;
     text-align: center;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
 
   .lgx-banner-info-circle {
