@@ -6994,14 +6994,13 @@ button:hover:after {
 .lgx-about-threeimg:after,
 .lgx-single-speaker {
   content: "";
-  text-align: center;
 }
 
-.lgx-single-speaker img {
-  width: 100%; /* Ensure the image takes the full width of the container */
-  max-height: 200px; /* Set a fixed height for the image container */
-  object-fit: cover; /* Crop or fit the image within the container */
-}
+/* .lgx-single-speaker img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+} */
 
 .lgx-header .dropdown-submenu.pull-left {
   float: none;
@@ -9552,7 +9551,6 @@ button:hover:after {
   width: 90%;
   height: 90%;
   text-align: center;
-  border-radius: 8px;
   opacity: 0;
   padding: 0.8rem 0;
   -webkit-transition: all 0.3s ease-in-out 0.3s;
@@ -14399,35 +14397,38 @@ blockquote.lgx-testi-single:before {
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 }
 
-.mt-1{
+.mt-1 {
   margin-top: 0.25rem;
 }
 
-.mt-2{
+.mt-2 {
   margin-top: 0.5rem;
 }
 
-.mt-3{
+.mt-3 {
   margin-top: 0.75rem;
 }
 
-.mt-4{
+.mt-4 {
   margin-top: 1rem;
 }
 
-.pt-1{
+.pt-1 {
   padding-top: 0.25rem;
 }
 
-.pt-2{
+.pt-2 {
   padding-top: 0.5rem;
 }
 
-.pt-3{
+.pt-3 {
   padding-top: 0.75rem;
 }
 
-.pt-4{
+.pt-4 {
   padding-top: 1rem;
 }
 
+.my-text{
+  color: #fefefe;
+}
