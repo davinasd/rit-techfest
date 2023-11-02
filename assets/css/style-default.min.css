@@ -6992,8 +6992,15 @@ button:hover:after {
 
 .lgx-about-img-sp:after,
 .lgx-about-threeimg:after,
-.lgx-single-speaker:after {
+.lgx-single-speaker {
   content: "";
+  text-align: center;
+}
+
+.lgx-single-speaker img {
+  width: 100%; /* Ensure the image takes the full width of the container */
+  max-height: 200px; /* Set a fixed height for the image container */
+  object-fit: cover; /* Crop or fit the image within the container */
 }
 
 .lgx-header .dropdown-submenu.pull-left {
