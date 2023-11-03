@@ -91,7 +91,51 @@
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <meta name="google-site-verification" content="9l6jBCdCjl0ZW1Q6RrsllF3h9y5WdO-_rNvO1BKgH9s" />
+<style>
+  .dropdown .dropdown-menu {
+  display: none;
+}
 
+/* Show the dropdown menu when hovering over the parent list item */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+.dropdown ul {
+  display: none;
+}
+
+/* Show the dropdown menu when hovering over the parent list item */
+.dropdown:hover ul {
+  display: block;
+}
+
+/* Style the dropdown menu */
+.dropdown ul {
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  padding: 0;
+}
+
+.dropdown ul li {
+  padding: 10px;
+}
+
+/* Style the links in the dropdown menu */
+.dropdown ul li a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+}
+
+/* Change link color on hover */
+.dropdown ul li a:hover {
+  color: #135194 ;
+}
+
+</style>
 </head>
 
 <body class="home">
@@ -127,19 +171,35 @@
                 </div>
               </div>
               <div id="navbar" class="navbar-collapse collapse">
-                <!-- <div class="lgx-nav-right navbar-right">
-                  <div class="lgx-cart-area">
-                    <a class="lgx-btn lgx-btn-red" href="#"><span>Login</span></a>
-                  </div>
-                </div> -->
-                <ul class="nav navbar-nav lgx-nav navbar-right">
-                  <li><a class="lgx-scroll" href="#">Home</a></li>
-                  <li><a class="lgx-scroll" href="#lgx-speakers">Events</a></li>
-                  <li><a class="lgx-scroll" href="#lgx-schedule">Schedule</a></li>
-                  <li><a class="lgx-scroll" href="#lgx-sponsors">Sponsors</a></li>
-                  <li><a class="lgx-scroll" href="team.html">Team</a></li>
-                  <li><a class="lgx-scroll" href="#">Contact</a></li>
-                </ul>
+               
+       <ul class="nav navbar-nav lgx-nav navbar-right">
+  <li><a class="lgx-scroll" href="#">Home</a></li>
+  <li class="dropdown">
+    <a class="lgx-scroll" href="#lgx-speakers">Events</a>
+    <ul class="dropdown-menu " style="color: #135194;">
+      <li><a href="#">COMPUTER SCIENCE</a></li>
+      <li><a href="#">INFORMATION SCIENCE</a></li>
+      <li><a href="#">ARTIFICIAL INTELIGGENCE AND MACHINE LEARNING</a></li>
+      <li><a href="#">ARTIFICIAL INTELIGGENCE AND DATA SCIENCE</a></li>
+      <li><a href="#">INFORMATION SCIENCE</a></li>
+      <li><a href="#">CSE(AI AND ML&CYBER SECURITY)</a></li>
+      <li><a href="#">ECE</a></li>
+      <li><a href="#">EE</a></li>
+      <li><a href="#">ETE</a></li>
+      <li><a href="#">EI</a></li>
+      <li><a href="#">CIVIL</a></li>
+      <li><a href="#">BIOTECHNOLOGY</a></li>
+      <li><a href="#">EI</a></li>
+      
+    </ul>
+  </li>
+  <li><a class="lgx-scroll" href="#lgx-schedule">Schedule</a></li>
+  <li><a class="lgx-scroll" href="#lgx-sponsors">Sponsors</a></li>
+  <li><a class="lgx-scroll" href="team.html">Team</a></li>
+  <li><a class="lgx-scroll" href="#">Contact</a></li>
+</ul>
+
+
               </div>
               <!--/.nav-collapse -->
             </nav>
@@ -191,9 +251,16 @@
     </section>
     <!--BANNER END-->
 
-    
-    <!--ABOUT-->
-   
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!--ABOUT-->
+<section>
+  <div id="imageSlider">
+    <div><img src="assets\img\home-poster.png" alt="Image 1"></div>
+  </div>
+</section>
+
+
+
 
     <section>
       <div id="lgx-about" class="lgx-about">
@@ -329,10 +396,14 @@
                 </div>
               </div>
               </div>
-              <button onclick="showAllColumns()" style="background-color: yellow; color: black;">All</button>
-<button onclick="showColumn(1)" style="background-color: yellow; color: black;">AI ML</button>
-<button onclick="showColumn(2)" style="background-color: yellow; color: black;">WEB DEVELOPMENT</button>
-<button onclick="showColumn(3)" style="background-color: yellow; color: black;">BLOCKCHAIN </button>
+              
+             <div style="text-align: center; margin-top: 20px;">
+  <button onclick="showAllColumns()" style="background-color: yellow; color: black;">All</button>
+  <button onclick="showColumn(1)" style="background-color: yellow; color: black;">ALIEN</button>
+  <button onclick="showColumn(2)" style="background-color: yellow; color: black;">UNIVERSE</button>
+  <button onclick="showColumn(3)" style="background-color: yellow; color: black;">GALAXY</button>
+</div>
+
             </div>
             <!--//.ROW-->
             <div data-aos-duration="1000" data-aos="fade-up" class="section-btn-area">
