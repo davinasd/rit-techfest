@@ -191,8 +191,10 @@
     </section>
     <!--BANNER END-->
 
-
+    
     <!--ABOUT-->
+   
+
     <section>
       <div id="lgx-about" class="lgx-about">
         <div class="lgx-inner">
@@ -243,8 +245,8 @@
               </div>
             </div>
             <!--//.ROW-->
-            <div class="row">
-              <div data-aos-duration="1000" data-aos="fade-up" class="col-xs-12 col-sm-6 col-md-4">
+            <div class="row"><div class="col-xs-12 col-sm-6 col-md-4" id="column1">
+              <div data-aos-duration="1000" data-aos="fade-up" >
                 <div class="lgx-single-speaker2 lgx-single-speaker3 shadow-lg">
                   <!--lgx-single-speaker-circle lgx-single-speaker2 lgx-single-speaker3-->
                   <figure>
@@ -257,7 +259,7 @@
                   </figure>
                 </div>
               </div>
-              <div data-aos-duration="1000" data-aos="fade-up" class="col-xs-12 col-sm-6 col-md-4">
+              <div data-aos-duration="1000" data-aos="fade-up" >
                 <div class="lgx-single-speaker2 lgx-single-speaker3">
                   <!--lgx-single-speaker-circle lgx-single-speaker2 lgx-single-speaker3-->
                   <figure>
@@ -270,7 +272,9 @@
                   </figure>
                 </div>
               </div>
-              <div data-aos-duration="1000" data-aos="fade-up" class="col-xs-12 col-sm-6 col-md-4">
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-4" id="column2">
+              <div data-aos-duration="1000" data-aos="fade-up" >
                 <div class="lgx-single-speaker2 lgx-single-speaker3">
                   <!--lgx-single-speaker-circle lgx-single-speaker2 lgx-single-speaker3-->
                   <figure>
@@ -283,7 +287,7 @@
                   </figure>
                 </div>
               </div>
-              <div data-aos-duration="1000" data-aos="fade-up" class="col-xs-12 col-sm-6 col-md-4">
+              <div data-aos-duration="1000" data-aos="fade-up" >
                 <div class="lgx-single-speaker2 lgx-single-speaker3">
                   <!--lgx-single-speaker-circle lgx-single-speaker2 lgx-single-speaker3-->
                   <figure>
@@ -296,7 +300,9 @@
                   </figure>
                 </div>
               </div>
-              <div data-aos-duration="1000" data-aos="fade-up" class="col-xs-12 col-sm-6 col-md-4">
+              </div>
+               <div class="col-xs-12 col-sm-6 col-md-4" id="column3">
+              <div data-aos-duration="1000" data-aos="fade-up" >
                 <div class="lgx-single-speaker2 lgx-single-speaker3">
                   <!--lgx-single-speaker-circle lgx-single-speaker2 lgx-single-speaker3-->
                   <figure>
@@ -309,7 +315,7 @@
                   </figure>
                 </div>
               </div>
-              <div data-aos-duration="1000" data-aos="fade-up" class="col-xs-12 col-sm-6 col-md-4">
+              <div data-aos-duration="1000" data-aos="fade-up" >
                 <div class="lgx-single-speaker2 lgx-single-speaker3">
                   <!--lgx-single-speaker-circle lgx-single-speaker2 lgx-single-speaker3-->
                   <figure>
@@ -322,11 +328,16 @@
                   </figure>
                 </div>
               </div>
+              </div>
+              <button onclick="showAllColumns()" style="background-color: yellow; color: black;">All</button>
+<button onclick="showColumn(1)" style="background-color: yellow; color: black;">AI ML</button>
+<button onclick="showColumn(2)" style="background-color: yellow; color: black;">WEB DEVELOPMENT</button>
+<button onclick="showColumn(3)" style="background-color: yellow; color: black;">BLOCKCHAIN </button>
             </div>
             <!--//.ROW-->
             <div data-aos-duration="1000" data-aos="fade-up" class="section-btn-area">
               <!-- <a class="lgx-btn lgx-btn-big" href="events.html"><span>View More Events</span></a> -->
-              <a class="lgx-btn lgx-btn-big" href="#"><span>View More Events</span></a>
+              
             </div>
           </div>
           <!-- //.CONTAINER -->
@@ -338,7 +349,22 @@
 
 
 
+<script>
+  function showAllColumns() {
+  // Show all columns
+  document.getElementById("column1").style.display = "block";
+  document.getElementById("column2").style.display = "block";
+  document.getElementById("column3").style.display = "block";
+}
+function showColumn(columnNumber) {
+  // Hide all columns
+  document.getElementById("column1").style.display = "none";
+  document.getElementById("column2").style.display = "none";
+  document.getElementById("column3").style.display = "none";
 
+  // Show the selected column
+  document.getElementById("column" + columnNumber).style.display = "block";
+}</script>
 
     <!--SCHEDULE-->
     <section>
@@ -1219,7 +1245,7 @@
   <!--//.LGX SITE CONTAINER-->
   <!-- *** ADD YOUR SITE SCRIPT HERE *** -->
   <!-- JQUERY  -->
-  <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+  <script src="assets/js/vendor/jquery-1.12.4.min.js"></>
 
   <!-- BOOTSTRAP JS  -->
   <script src="assets/libs/bootstrap/js/bootstrap.min.js"></script>
