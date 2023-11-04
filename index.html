@@ -92,48 +92,29 @@
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <meta name="google-site-verification" content="9l6jBCdCjl0ZW1Q6RrsllF3h9y5WdO-_rNvO1BKgH9s" />
   <style>
-    .dropdown .dropdown-menu {
-      display: none;
+    /* Add this CSS to your existing styles */
+    .dropdown {
+      position: relative;
     }
 
-    /* Show the dropdown menu when hovering over the parent list item */
-    .dropdown:hover .dropdown-menu {
+    .dropdown:hover .dropdown-menu,
+    .dropdown:focus-within .dropdown-menu {
       display: block;
-    }
-
-    .dropdown ul {
-      display: none;
-    }
-
-    /* Show the dropdown menu when hovering over the parent list item */
-    .dropdown:hover ul {
-      display: block;
-    }
-
-    /* Style the dropdown menu */
-    .dropdown ul {
       position: absolute;
+      top: 100%;
+      left: 0;
+      z-index: 1000;
+    }
+
+    .dropdown-menu {
+      display: none;
+      /* Hide dropdown by default */
+      box-shadow: 0 3px 6px rgba(0, 0, 0, .1);
+      /* Optional: add shadow for dropdown */
       background-color: #fff;
-      border: 1px solid #ddd;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      list-style: none;
-      padding: 0;
-    }
-
-    .dropdown ul li {
-      padding: 10px;
-    }
-
-    /* Style the links in the dropdown menu */
-    .dropdown ul li a {
-      text-decoration: none;
-      color: #333;
-      display: block;
-    }
-
-    /* Change link color on hover */
-    .dropdown ul li a:hover {
-      color: #135194;
+      /* Optional: background color for dropdown */
+      min-width: 200px;
+      /* Optional: minimum width of dropdown */
     }
   </style>
 </head>
@@ -182,7 +163,7 @@
                       <li><a href="#">ARTIFICIAL INTELIGGENCE AND MACHINE LEARNING</a></li>
                       <li><a href="#">ARTIFICIAL INTELIGGENCE AND DATA SCIENCE</a></li>
                       <li><a href="#">INFORMATION SCIENCE</a></li>
-                      <li><a href="#">CSE(AI AND ML&CYBER SECURITY)</a></li>
+                      <li><a href="dept/cseaiml.html">CSE(AI AND ML&CYBER SECURITY)</a></li>
                       <li><a href="#">ECE</a></li>
                       <li><a href="#">EE</a></li>
                       <li><a href="#">ETE</a></li>
@@ -190,7 +171,6 @@
                       <li><a href="#">CIVIL</a></li>
                       <li><a href="#">BIOTECHNOLOGY</a></li>
                       <li><a href="#">EI</a></li>
-
                     </ul>
                   </li>
                   <li><a class="lgx-scroll" href="#lgx-schedule">Schedule</a></li>

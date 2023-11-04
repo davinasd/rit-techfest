@@ -630,3 +630,34 @@
          ========================================================================== */
   }); //DOM READY
 })(jQuery);
+
+// dropdown
+
+// Vanilla JavaScript to toggle dropdown on click
+document.addEventListener("DOMContentLoaded", function () {
+  var dropdowns = document.querySelectorAll(".dropdown");
+
+  dropdowns.forEach(function (dropdown) {
+    dropdown.addEventListener("click", function (event) {
+      // Close all other dropdowns when one is opened
+      dropdowns.forEach(function (elem) {
+        if (elem !== dropdown) {
+          elem.classList.remove("open");
+        }
+      });
+
+      // Toggle the current dropdown
+      if (!this.classList.contains("open")) {
+        this.classList.add("open");
+        event.stopPropagation(); // Stop click event from bubbling up
+      }
+    });
+  });
+
+  // Close dropdowns when clicking outside of them
+  document.addEventListener("click", function (e) {
+    dropdowns.forEach(function (elem) {
+      elem.classList.remove("open");
+    });
+  });
+});
