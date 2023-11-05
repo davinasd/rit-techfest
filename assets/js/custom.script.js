@@ -634,24 +634,28 @@
 // dropdown
 
 // Vanilla JavaScript to toggle dropdown on click
+// Vanilla JavaScript to toggle dropdown on click
 document.addEventListener("DOMContentLoaded", function () {
   var dropdowns = document.querySelectorAll(".dropdown");
 
-  dropdowns.forEach(function (dropdown) {
-    dropdown.addEventListener("click", function (event) {
-      // Close all other dropdowns when one is opened
-      dropdowns.forEach(function (elem) {
-        if (elem !== dropdown) {
+  // Function to toggle dropdown
+  function toggleDropdown(event) {
+    // Close all other dropdowns when one is opened
+    dropdowns.forEach(
+      function (elem) {
+        if (elem !== this) {
           elem.classList.remove("open");
         }
-      });
+      }.bind(this)
+    );
 
-      // Toggle the current dropdown
-      if (!this.classList.contains("open")) {
-        this.classList.add("open");
-        event.stopPropagation(); // Stop click event from bubbling up
-      }
-    });
+    // Toggle the current dropdown
+    this.classList.toggle("open");
+    event.stopPropagation(); // Stop click event from bubbling up
+  }
+
+  dropdowns.forEach(function (dropdown) {
+    dropdown.addEventListener("click", toggleDropdown);
   });
 
   // Close dropdowns when clicking outside of them
