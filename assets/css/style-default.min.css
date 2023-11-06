@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 a,
 a.active,
 a:focus,
@@ -7019,7 +7024,12 @@ button:hover:after {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-direction: row;
+}
+
+.header-banner__logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .lgx-header .lgx-navbar .container {
@@ -7673,7 +7683,8 @@ button:hover:after {
 }
 
 .lgx-banner {
-  background: url(../img/banner.png) top center no-repeat;
+  /* background: url(../img/banner.png) top center no-repeat; */
+  background: purple;
   -webkit-background-size: cover;
   -o-background-size: cover;
   -moz-background-size: cover;
@@ -7847,7 +7858,7 @@ button:hover:after {
 
 .lgx-banner-info .title i b:nth-child(1),
 .lgx-banner-info .title span b:nth-child(1) {
-  color: #ec398b;
+  color: #efa506;
 }
 
 .lgx-banner-info .title i b:nth-child(2),
@@ -7857,11 +7868,15 @@ button:hover:after {
 
 .lgx-banner-info .title i b:nth-child(3),
 .lgx-banner-info .title span b:nth-child(3) {
-  color: #99defa;
+  color: #efa506;
+}
+.lgx-banner-info .title i b:nth-child(4),
+.lgx-banner-info .title span b:nth-child(4) {
+  color: #efa506;
 }
 
 .lgx-banner-info .date {
-  color: #fff;
+  color: #efa506;
 }
 
 .lgx-banner-info .date i {
@@ -7902,6 +7917,12 @@ button:hover:after {
 
 .lgx-banner-info .action-area .video-area a {
   margin-right: 10px;
+}
+
+.hero-banner__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .lgx-banner-info .action-area .video-area a i {
@@ -8199,6 +8220,14 @@ button:hover:after {
   line-height: 8.5rem;
 }
 
+.navbar {
+  display: flex !important;
+}
+
+.header-banner__logo-phone {
+  display: none;
+}
+
 @media (max-width: 991px) {
   .lgx-banner .lgx-inner {
     padding: 16rem 0 10rem;
@@ -8224,6 +8253,18 @@ button:hover:after {
 @media (max-width: 767px) {
   .lgx-banner-info {
     color: #fff;
+  }
+
+  .navbar {
+    display: block !important;
+  }
+
+  .header-banner__logo {
+    display: none;
+  }
+
+  .header-banner__logo-phone {
+    display: block;
   }
 
   .lgx-banner-info .subtitle {
@@ -9883,7 +9924,7 @@ button:hover:after {
 .lgx-single-speaker3 figure {
   background: #fff;
   border-radius: 16px;
-  padding: 1.5rem;
+  padding: 2rem;
   transition: all 0.3s ease-in-out 0s;
 }
 
