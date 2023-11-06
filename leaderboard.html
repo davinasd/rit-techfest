@@ -131,24 +131,24 @@
                                 </button>
                                 <div class="lgx-logo">
                                     <a href="index.html" class="lgx-scroll">
-                                        <img src="assets/img/logo.png" alt="Orion Logo" width="160" />
+                                        <img src="assets/img/logo.png" alt="Orion Logo" width="160"
+                                            class="rounded-lg shadow-md" />
                                     </a>
                                 </div>
                             </div>
                             <div id="navbar" class="navbar-collapse collapse">
                                 <!-- <div class="lgx-nav-right navbar-right">
-                                    <div class="lgx-cart-area">
-                                        <a class="lgx-btn lgx-btn-red" href="#" target="_blank">Buy Ticket</a>
-                                    </div>
-                                </div> -->
+                        <div class="lgx-cart-area">
+                          <a class="lgx-btn lgx-btn-red" href="#"><span>Login</span></a>
+                        </div>
+                      </div> -->
                                 <ul class="nav navbar-nav lgx-nav navbar-right">
-                                    <li><a class="lgx-scroll" href="./index.html">Home</a></li>
-                                    <li><a class="lgx-scroll" href="./index.html#lgx-speakers">Events</a></li>
-                                    <li><a class="lgx-scroll" href="./index.html#lgx-schedule">Schedule</a></li>
-                                    <li><a class="lgx-scroll" href="#">Leaderboard</a></li>
-                                    <li><a class="lgx-scroll" href="./index.html#lgx-sponsors">Sponsors</a></li>
-                                    <li><a class="lgx-scroll" href="./team.html">Team</a></li>
-                                    <li><a class="lgx-scroll" href="mailto:contact@orionthapar.com">Contact</a></li>
+                                    <li><a class="lgx-scroll" href="/index.html">Home</a></li>
+                                    <li><a class="lgx-scroll" href="/index.html#lgx-speakers">Events</a></li>
+                                    <li><a class="lgx-scroll" href="/index.html#lgx-schedule">Schedule</a></li>
+                                    <li><a class="lgx-scroll" href="/index.html#lgx-sponsors">Sponsors</a></li>
+                                    <li><a class="lgx-scroll" href="team.html">Team</a></li>
+                                    <li><a class="lgx-scroll" href="#">Contact</a></li>
                                 </ul>
                             </div>
                             <!--/.nav-collapse -->
@@ -193,7 +193,9 @@
             <div class="lgx-page-wrapper">
                 <!--News-->
                 <section>
-                    <h1><center>Orion'19 Leaderboard</center></h1><br/>
+                    <h1>
+                        <center>Orion'19 Leaderboard</center>
+                    </h1><br />
                     <div class="container table-responsive">
 
                     </div><!-- //.CONTAINER -->
@@ -350,7 +352,7 @@
             $(tableData).each(function (i, rowData) {
                 var row = $('<tr></tr>');
                 $(rowData).each(function (j, cellData) {
-                    i == 0 ? j == 0 ? row.append($('<th width="7%">'+cellData+'</th>')) : row.append($('<th>'+cellData+'</th>')) : row.append($('<td>'+cellData+'</td>'));
+                    i == 0 ? j == 0 ? row.append($('<th width="7%">' + cellData + '</th>')) : row.append($('<th>' + cellData + '</th>')) : row.append($('<td>' + cellData + '</td>'));
                 });
                 table.append(row);
             });
