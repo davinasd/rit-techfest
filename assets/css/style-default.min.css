@@ -9806,6 +9806,10 @@ button:hover:after {
   background: #fff;
   padding: 1.5rem 2rem 2rem;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .lgx-single-speaker2 .speaker-info .title {
@@ -9814,6 +9818,12 @@ button:hover:after {
   font-weight: 700;
   margin: 0;
   color: #1b273d;
+}
+
+.lgx-single-speaker2 .speaker-info .fest-event__duration {
+  align-self: flex-end;
+  text-align: right;
+  font-size: 14px;
 }
 
 .lgx-single-speaker2 .speaker-info .title a {
@@ -9856,6 +9866,10 @@ button:hover:after {
 
 .lgx-single-speaker2:hover .speaker-info .title {
   color: #fff;
+}
+
+.lgx-single-speaker2:hover .speaker-info .fest-event__duration {
+  color: #ddd;
 }
 
 .lgx-single-speaker2:hover .speaker-info .title a {
