@@ -137,7 +137,7 @@
     <!--HEADER-->
     <header>
       <div id="lgx-header" class="lgx-header">
-        <div class="lgx-header-position lgx-header-position-white lgx-header-position-fixed ">
+        <div class="lgx-header-position lgx-header-position-white lgx-header-position-absolute ">
           <!--lgx-header-position-fixed lgx-header-position-white lgx-header-fixed-container lgx-header-fixed-container-gap lgx-header-position-white-->
           <div class="lgx-container">
             <!--lgx-container-fluid-->
@@ -151,9 +151,9 @@
                   <span class="icon-bar"></span>
                 </button>
                 <div class="lgx-logo" style="display: flex; gap: 15px; align-items: center;">
-                  <a href="index.html" class="lgx-scroll">
-                    <img src="assets/img/robot (1).png" alt="MSRIT Logo" width="45" />
-                  </a>
+                  <!-- <a href="index.html" class="lgx-scroll">
+                    <img src="assets/img/robot (1).png" alt="MSRIT Logo" width="65" />
+                  </a> -->
                   <a href="index.html" class="lgx-scroll">
                     <img src="assets/img/msrit_logo.png" alt="MSRIT Logo" width="160" />
                   </a>
@@ -189,17 +189,17 @@
                   <div class="header-banner__logo-phone">
                     <div class="lgx-logo">
                       <a href="index.html" class="lgx-scroll">
+                        <img src="assets/img/robot__1_-removebg-preview.png" alt="MSRIT Logo" width="50" />
+                      </a>
+                    </div>
+                    <div class="lgx-logo">
+                      <a href="index.html" class="lgx-scroll">
                         <img src="assets/img/robot-removebg-preview.png" alt="MSRIT Logo" width="100" />
                       </a>
                     </div>
                     <div class="lgx-logo">
                       <a href="index.html" class="lgx-scroll">
                         <img src="assets/img/TechFest Logo.png" alt="MSRIT Logo" width="40" />
-                      </a>
-                    </div>
-                    <div class="lgx-logo">
-                      <a href="index.html" class="lgx-scroll">
-                        <img src="assets/img/logo4.jpeg" alt="MSRIT Logo" width="60" />
                       </a>
                     </div>
                   </div>
@@ -213,16 +213,6 @@
                 <div class="lgx-logo">
                   <a href="index.html" class="lgx-scroll">
                     <img src="assets/img/robot-removebg-preview.png" alt="MSRIT Logo" width="125" />
-                  </a>
-                </div>
-                <div class="lgx-logo">
-                  <a href="index.html" class="lgx-scroll">
-                    <img src="assets/img/TechFest Logo.png" alt="MSRIT Logo" width="50" />
-                  </a>
-                </div>
-                <div class="lgx-logo">
-                  <a href="index.html" class="lgx-scroll">
-                    <img src="assets/img/logo4.jpeg" alt="MSRIT Logo" width="60" />
                   </a>
                 </div>
               </div>
@@ -240,7 +230,7 @@
       <div class="lgx-banner">
         <div class="lgx-banner-style">
           <div class="lgx-inner lgx-inner-fixed">
-            <div class="hero-banner__container container">
+            <div class="hero-banner__container">
               <div class="lgx-banner-info-circle">
                 <div class="info-circle-inner">
                   <h3 class="date"><b class="lgx-counter">10</b> <span>November</span></h3>
@@ -250,8 +240,18 @@
                   </div>
                 </div>
               </div>
-              <div class="lgx-banner-info">
-                <img src="/assets/img/home-poster.png" alt="">
+              <div class="watermark-logo">
+                <a href="index.html" class="lgx-scroll">
+                  <img src="assets/img/logo4-removebg-preview.png" alt="MSRIT Logo" width="60" />
+                </a>
+              </div>
+              <div class="watermark-logo-2">
+                <a href="index.html" class="lgx-scroll">
+                  <img src="assets/img/robot__1_-removebg-preview.png" alt="MSRIT Logo" width="60" />
+                </a>
+              </div>
+              <div class="hero-banner">
+                <!-- <img src="/assets/img/TechFest Logo.png" alt=""> -->
                 <!-- <h3 class="subtitle">#MultiverseOfTech</h3>
                       <h2 class="title">RIT Tech Fest
                         <span><b>2</b><b>0</b><b>2</b><b>3</b></span>
@@ -335,10 +335,12 @@
                 </div>
               </div>
             </div>
+
+            <div id="rendered_events"></div>
             <!--//.ROW-->
             <div class="row">
-              <div class="col-xs-12 col-sm-6 col-md-4" id="column1">
-                <div data-aos-duration="1000" data-aos="fade-up">
+              <div class="event-grid">
+                <div class="universe-event-matrix" data-aos-duration="500" data-aos="fade-up">
                   <div class="lgx-single-speaker2 lgx-single-speaker3 shadow-lg">
                     <!--lgx-single-speaker-circle lgx-single-speaker2 lgx-single-speaker3-->
                     <figure>
@@ -364,7 +366,450 @@
                     </figure>
                   </div>
                 </div>
-                <div data-aos-duration="1000" data-aos="fade-up">
+
+                <div class="universe-event-alien" data-aos-duration="1000" data-aos="fade-up">
+                  <div class="lgx-single-speaker2 lgx-single-speaker3 shadow-lg">
+                    <!--lgx-single-speaker-circle lgx-single-speaker2 lgx-single-speaker3-->
+                    <figure>
+                      <figcaption>
+                        <div class="fest-event__duration">
+                          <p style="text-align: right; margin-bottom: 10px;">
+                            <img src="/assets/img/icons/wall-clock.png" alt="clock" height="17px">
+                            3 hours
+                          </p>
+                        </div>
+
+                        <div data-aos-duration="1000" data-aos="fade-up" class="speaker-info">
+
+                          <h3 class="title"><a href="#" target="_blank">Datathon</a></h3>
+                          <h4 class="subtitle">for CP Champs</h4>
+
+                          <p class="bg-info"
+                            style="font-size: 12px; border-radius: 10px; padding: 1px 5px; margin-top: 10px;">
+                            Matrix
+                          </p>
+                        </div>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div class="universe-event-robot" data-aos-duration="1000" data-aos="fade-up">
+                  <div class="lgx-single-speaker2 lgx-single-speaker3 shadow-lg">
+                    <!--lgx-single-speaker-circle lgx-single-speaker2 lgx-single-speaker3-->
+                    <figure>
+                      <figcaption>
+                        <div class="fest-event__duration">
+                          <p style="text-align: right; margin-bottom: 10px;">
+                            <img src="/assets/img/icons/wall-clock.png" alt="clock" height="17px">
+                            3 hours
+                          </p>
+                        </div>
+
+                        <div data-aos-duration="1000" data-aos="fade-up" class="speaker-info">
+
+                          <h3 class="title"><a href="#" target="_blank">ISPY</a></h3>
+                          <h4 class="subtitle">for CP Champs</h4>
+
+                          <p class="bg-info"
+                            style="font-size: 12px; border-radius: 10px; padding: 1px 5px; margin-top: 10px;">
+                            Matrix
+                          </p>
+                        </div>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div class="universe-event-matrix" data-aos-duration="500" data-aos="fade-up">
+                  <div class="lgx-single-speaker2 lgx-single-speaker3 shadow-lg">
+                    <!--lgx-single-speaker-circle lgx-single-speaker2 lgx-single-speaker3-->
+                    <figure>
+                      <figcaption>
+                        <div class="fest-event__duration">
+                          <p style="text-align: right; margin-bottom: 10px;">
+                            <img src="/assets/img/icons/wall-clock.png" alt="clock" height="17px">
+                            3 hours
+                          </p>
+                        </div>
+
+                        <div data-aos-duration="1000" data-aos="fade-up" class="speaker-info">
+
+                          <h3 class="title"><a href="#" target="_blank">Tech Relay</a></h3>
+                          <h4 class="subtitle">for CP Champs</h4>
+
+                          <p class="bg-info"
+                            style="font-size: 12px; border-radius: 10px; padding: 1px 5px; margin-top: 10px;">
+                            Matrix
+                          </p>
+                        </div>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div class="universe-event-matrix" data-aos-duration="500" data-aos="fade-up">
+                  <div class="lgx-single-speaker2 lgx-single-speaker3 shadow-lg">
+                    <!--lgx-single-speaker-circle lgx-single-speaker2 lgx-single-speaker3-->
+                    <figure>
+                      <figcaption>
+                        <div class="fest-event__duration">
+                          <p style="text-align: right; margin-bottom: 10px;">
+                            <img src="/assets/img/icons/wall-clock.png" alt="clock" height="17px">
+                            3 hours
+                          </p>
+                        </div>
+
+                        <div data-aos-duration="1000" data-aos="fade-up" class="speaker-info">
+
+                          <h3 class="title"><a href="#" target="_blank">Gaming Booth</a></h3>
+                          <h4 class="subtitle">for CP Champs</h4>
+
+                          <p class="bg-info"
+                            style="font-size: 12px; border-radius: 10px; padding: 1px 5px; margin-top: 10px;">
+                            Matrix
+                          </p>
+                        </div>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div class="universe-event-matrix" data-aos-duration="500" data-aos="fade-up">
+                  <div class="lgx-single-speaker2 lgx-single-speaker3 shadow-lg">
+                    <!--lgx-single-speaker-circle lgx-single-speaker2 lgx-single-speaker3-->
+                    <figure>
+                      <figcaption>
+                        <div class="fest-event__duration">
+                          <p style="text-align: right; margin-bottom: 10px;">
+                            <img src="/assets/img/icons/wall-clock.png" alt="clock" height="17px">
+                            3 hours
+                          </p>
+                        </div>
+
+                        <div data-aos-duration="1000" data-aos="fade-up" class="speaker-info">
+
+                          <h3 class="title"><a href="#" target="_blank">Captueres</a></h3>
+                          <h4 class="subtitle">for CP Champs</h4>
+
+                          <p class="bg-info"
+                            style="font-size: 12px; border-radius: 10px; padding: 1px 5px; margin-top: 10px;">
+                            Matrix
+                          </p>
+                        </div>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div class="universe-event-matrix" data-aos-duration="500" data-aos="fade-up">
+                  <div class="lgx-single-speaker2 lgx-single-speaker3 shadow-lg">
+                    <!--lgx-single-speaker-circle lgx-single-speaker2 lgx-single-speaker3-->
+                    <figure>
+                      <figcaption>
+                        <div class="fest-event__duration">
+                          <p style="text-align: right; margin-bottom: 10px;">
+                            <img src="/assets/img/icons/wall-clock.png" alt="clock" height="17px">
+                            3 hours
+                          </p>
+                        </div>
+
+                        <div data-aos-duration="1000" data-aos="fade-up" class="speaker-info">
+
+                          <h3 class="title"><a href="#" target="_blank">Tech Charades</a></h3>
+                          <h4 class="subtitle">for CP Champs</h4>
+
+                          <p class="bg-info"
+                            style="font-size: 12px; border-radius: 10px; padding: 1px 5px; margin-top: 10px;">
+                            Matrix
+                          </p>
+                        </div>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div class="universe-event-matrix" data-aos-duration="500" data-aos="fade-up">
+                  <div class="lgx-single-speaker2 lgx-single-speaker3 shadow-lg">
+                    <!--lgx-single-speaker-circle lgx-single-speaker2 lgx-single-speaker3-->
+                    <figure>
+                      <figcaption>
+                        <div class="fest-event__duration">
+                          <p style="text-align: right; margin-bottom: 10px;">
+                            <img src="/assets/img/icons/wall-clock.png" alt="clock" height="17px">
+                            3 hours
+                          </p>
+                        </div>
+
+                        <div data-aos-duration="1000" data-aos="fade-up" class="speaker-info">
+
+                          <h3 class="title"><a href="#" target="_blank">Code the AI players</a></h3>
+                          <h4 class="subtitle">for CP Champs</h4>
+
+                          <p class="bg-info"
+                            style="font-size: 12px; border-radius: 10px; padding: 1px 5px; margin-top: 10px;">
+                            Matrix
+                          </p>
+                        </div>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div class="universe-event-matrix" data-aos-duration="500" data-aos="fade-up">
+                  <div class="lgx-single-speaker2 lgx-single-speaker3 shadow-lg">
+                    <!--lgx-single-speaker-circle lgx-single-speaker2 lgx-single-speaker3-->
+                    <figure>
+                      <figcaption>
+                        <div class="fest-event__duration">
+                          <p style="text-align: right; margin-bottom: 10px;">
+                            <img src="/assets/img/icons/wall-clock.png" alt="clock" height="17px">
+                            3 hours
+                          </p>
+                        </div>
+
+                        <div data-aos-duration="1000" data-aos="fade-up" class="speaker-info">
+
+                          <h3 class="title"><a href="#" target="_blank">Decryption Challenge</a></h3>
+                          <h4 class="subtitle">for CP Champs</h4>
+
+                          <p class="bg-info"
+                            style="font-size: 12px; border-radius: 10px; padding: 1px 5px; margin-top: 10px;">
+                            Matrix
+                          </p>
+                        </div>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div class="universe-event-matrix" data-aos-duration="500" data-aos="fade-up">
+                  <div class="lgx-single-speaker2 lgx-single-speaker3 shadow-lg">
+                    <!--lgx-single-speaker-circle lgx-single-speaker2 lgx-single-speaker3-->
+                    <figure>
+                      <figcaption>
+                        <div class="fest-event__duration">
+                          <p style="text-align: right; margin-bottom: 10px;">
+                            <img src="/assets/img/icons/wall-clock.png" alt="clock" height="17px">
+                            3 hours
+                          </p>
+                        </div>
+
+                        <div data-aos-duration="1000" data-aos="fade-up" class="speaker-info">
+
+                          <h3 class="title"><a href="#" target="_blank">Carpe Diem</a></h3>
+                          <h4 class="subtitle">for CP Champs</h4>
+
+                          <p class="bg-info"
+                            style="font-size: 12px; border-radius: 10px; padding: 1px 5px; margin-top: 10px;">
+                            Matrix
+                          </p>
+                        </div>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div class="universe-event-matrix" data-aos-duration="500" data-aos="fade-up">
+                  <div class="lgx-single-speaker2 lgx-single-speaker3 shadow-lg">
+                    <!--lgx-single-speaker-circle lgx-single-speaker2 lgx-single-speaker3-->
+                    <figure>
+                      <figcaption>
+                        <div class="fest-event__duration">
+                          <p style="text-align: right; margin-bottom: 10px;">
+                            <img src="/assets/img/icons/wall-clock.png" alt="clock" height="17px">
+                            3 hours
+                          </p>
+                        </div>
+
+                        <div data-aos-duration="1000" data-aos="fade-up" class="speaker-info">
+
+                          <h3 class="title"><a href="#" target="_blank">Mongul of management</a></h3>
+                          <h4 class="subtitle">for CP Champs</h4>
+
+                          <p class="bg-info"
+                            style="font-size: 12px; border-radius: 10px; padding: 1px 5px; margin-top: 10px;">
+                            Matrix
+                          </p>
+                        </div>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div class="universe-event-matrix" data-aos-duration="500" data-aos="fade-up">
+                  <div class="lgx-single-speaker2 lgx-single-speaker3 shadow-lg">
+                    <!--lgx-single-speaker-circle lgx-single-speaker2 lgx-single-speaker3-->
+                    <figure>
+                      <figcaption>
+                        <div class="fest-event__duration">
+                          <p style="text-align: right; margin-bottom: 10px;">
+                            <img src="/assets/img/icons/wall-clock.png" alt="clock" height="17px">
+                            3 hours
+                          </p>
+                        </div>
+
+                        <div data-aos-duration="1000" data-aos="fade-up" class="speaker-info">
+
+                          <h3 class="title"><a href="#" target="_blank">EnigmaEscape</a></h3>
+                          <h4 class="subtitle">for CP Champs</h4>
+
+                          <p class="bg-info"
+                            style="font-size: 12px; border-radius: 10px; padding: 1px 5px; margin-top: 10px;">
+                            Matrix
+                          </p>
+                        </div>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div class="universe-event-matrix" data-aos-duration="500" data-aos="fade-up">
+                  <div class="lgx-single-speaker2 lgx-single-speaker3 shadow-lg">
+                    <!--lgx-single-speaker-circle lgx-single-speaker2 lgx-single-speaker3-->
+                    <figure>
+                      <figcaption>
+                        <div class="fest-event__duration">
+                          <p style="text-align: right; margin-bottom: 10px;">
+                            <img src="/assets/img/icons/wall-clock.png" alt="clock" height="17px">
+                            3 hours
+                          </p>
+                        </div>
+
+                        <div data-aos-duration="1000" data-aos="fade-up" class="speaker-info">
+
+                          <h3 class="title"><a href="#" target="_blank">PrashNOTree</a></h3>
+                          <h4 class="subtitle">for CP Champs</h4>
+
+                          <p class="bg-info"
+                            style="font-size: 12px; border-radius: 10px; padding: 1px 5px; margin-top: 10px;">
+                            Matrix
+                          </p>
+                        </div>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div class="universe-event-matrix" data-aos-duration="500" data-aos="fade-up">
+                  <div class="lgx-single-speaker2 lgx-single-speaker3 shadow-lg">
+                    <!--lgx-single-speaker-circle lgx-single-speaker2 lgx-single-speaker3-->
+                    <figure>
+                      <figcaption>
+                        <div class="fest-event__duration">
+                          <p style="text-align: right; margin-bottom: 10px;">
+                            <img src="/assets/img/icons/wall-clock.png" alt="clock" height="17px">
+                            3 hours
+                          </p>
+                        </div>
+
+                        <div data-aos-duration="1000" data-aos="fade-up" class="speaker-info">
+
+                          <h3 class="title"><a href="#" target="_blank">Air crash Investigation</a></h3>
+                          <h4 class="subtitle">for CP Champs</h4>
+
+                          <p class="bg-info"
+                            style="font-size: 12px; border-radius: 10px; padding: 1px 5px; margin-top: 10px;">
+                            Matrix
+                          </p>
+                        </div>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div class="universe-event-matrix" data-aos-duration="500" data-aos="fade-up">
+                  <div class="lgx-single-speaker2 lgx-single-speaker3 shadow-lg">
+                    <!--lgx-single-speaker-circle lgx-single-speaker2 lgx-single-speaker3-->
+                    <figure>
+                      <figcaption>
+                        <div class="fest-event__duration">
+                          <p style="text-align: right; margin-bottom: 10px;">
+                            <img src="/assets/img/icons/wall-clock.png" alt="clock" height="17px">
+                            3 hours
+                          </p>
+                        </div>
+
+                        <div data-aos-duration="1000" data-aos="fade-up" class="speaker-info">
+
+                          <h3 class="title"><a href="#" target="_blank">AI patch Up party</a></h3>
+                          <h4 class="subtitle">for CP Champs</h4>
+
+                          <p class="bg-info"
+                            style="font-size: 12px; border-radius: 10px; padding: 1px 5px; margin-top: 10px;">
+                            Matrix
+                          </p>
+                        </div>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div class="universe-event-matrix" data-aos-duration="500" data-aos="fade-up">
+                  <div class="lgx-single-speaker2 lgx-single-speaker3 shadow-lg">
+                    <!--lgx-single-speaker-circle lgx-single-speaker2 lgx-single-speaker3-->
+                    <figure>
+                      <figcaption>
+                        <div class="fest-event__duration">
+                          <p style="text-align: right; margin-bottom: 10px;">
+                            <img src="/assets/img/icons/wall-clock.png" alt="clock" height="17px">
+                            3 hours
+                          </p>
+                        </div>
+
+                        <div data-aos-duration="1000" data-aos="fade-up" class="speaker-info">
+
+                          <h3 class="title"><a href="#" target="_blank">OH my Godness</a></h3>
+                          <h4 class="subtitle">for CP Champs</h4>
+
+                          <p class="bg-info"
+                            style="font-size: 12px; border-radius: 10px; padding: 1px 5px; margin-top: 10px;">
+                            Matrix
+                          </p>
+                        </div>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div class="universe-event-matrix" data-aos-duration="500" data-aos="fade-up">
+                  <div class="lgx-single-speaker2 lgx-single-speaker3 shadow-lg">
+                    <!--lgx-single-speaker-circle lgx-single-speaker2 lgx-single-speaker3-->
+                    <figure>
+                      <figcaption>
+                        <div class="fest-event__duration">
+                          <p style="text-align: right; margin-bottom: 10px;">
+                            <img src="/assets/img/icons/wall-clock.png" alt="clock" height="17px">
+                            3 hours
+                          </p>
+                        </div>
+
+                        <div data-aos-duration="1000" data-aos="fade-up" class="speaker-info">
+
+                          <h3 class="title"><a href="#" target="_blank">Man V/s AI</a></h3>
+                          <h4 class="subtitle">for CP Champs</h4>
+
+                          <p class="bg-info"
+                            style="font-size: 12px; border-radius: 10px; padding: 1px 5px; margin-top: 10px;">
+                            Matrix
+                          </p>
+                        </div>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div class="universe-event-matrix" data-aos-duration="500" data-aos="fade-up">
+                  <div class="lgx-single-speaker2 lgx-single-speaker3 shadow-lg">
+                    <!--lgx-single-speaker-circle lgx-single-speaker2 lgx-single-speaker3-->
+                    <figure>
+                      <figcaption>
+                        <div class="fest-event__duration">
+                          <p style="text-align: right; margin-bottom: 10px;">
+                            <img src="/assets/img/icons/wall-clock.png" alt="clock" height="17px">
+                            3 hours
+                          </p>
+                        </div>
+
+                        <div data-aos-duration="1000" data-aos="fade-up" class="speaker-info">
+
+                          <h3 class="title"><a href="#" target="_blank">CAD Modelling</a></h3>
+                          <h4 class="subtitle">for CP Champs</h4>
+
+                          <p class="bg-info"
+                            style="font-size: 12px; border-radius: 10px; padding: 1px 5px; margin-top: 10px;">
+                            Matrix
+                          </p>
+                        </div>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div class="universe-event-matrix" data-aos-duration="500" data-aos="fade-up">
                   <div class="lgx-single-speaker2 lgx-single-speaker3">
                     <!--lgx-single-speaker-circle lgx-single-speaker2 lgx-single-speaker3-->
                     <figure>
@@ -389,10 +834,8 @@
                     </figure>
                   </div>
                 </div>
-              </div>
-              <div class="col-xs-12 col-sm-6 col-md-4" id="column2">
-                <div data-aos-duration="1000" data-aos="fade-up">
-                  <div class="lgx-single-speaker2 lgx-single-speaker3">
+                <div class="universe-event-matrix" data-aos-duration="500" data-aos="fade-up">
+                  <div class="lgx-single-speaker2 lgx-single-speaker3 shadow-lg">
                     <!--lgx-single-speaker-circle lgx-single-speaker2 lgx-single-speaker3-->
                     <figure>
                       <figcaption>
@@ -404,19 +847,281 @@
                         </div>
 
                         <div data-aos-duration="1000" data-aos="fade-up" class="speaker-info">
-                          <h3 class="title"><a href="#" target="_blank">DataThon</a></h3>
-                          <h4 class="subtitle">for ML Enthusiasts</h4>
+
+                          <h3 class="title"><a href="#" target="_blank">Circuitrix</a></h3>
+                          <h4 class="subtitle">for CP Champs</h4>
 
                           <p class="bg-info"
                             style="font-size: 12px; border-radius: 10px; padding: 1px 5px; margin-top: 10px;">
-                            Robot
+                            Matrix
                           </p>
                         </div>
                       </figcaption>
                     </figure>
                   </div>
                 </div>
-                <div data-aos-duration="1000" data-aos="fade-up">
+                <div class="universe-event-matrix" data-aos-duration="500" data-aos="fade-up">
+                  <div class="lgx-single-speaker2 lgx-single-speaker3 shadow-lg">
+                    <!--lgx-single-speaker-circle lgx-single-speaker2 lgx-single-speaker3-->
+                    <figure>
+                      <figcaption>
+                        <div class="fest-event__duration">
+                          <p style="text-align: right; margin-bottom: 10px;">
+                            <img src="/assets/img/icons/wall-clock.png" alt="clock" height="17px">
+                            3 hours
+                          </p>
+                        </div>
+
+                        <div data-aos-duration="1000" data-aos="fade-up" class="speaker-info">
+
+                          <h3 class="title"><a href="#" target="_blank">MicroMadness</a></h3>
+                          <h4 class="subtitle">for CP Champs</h4>
+
+                          <p class="bg-info"
+                            style="font-size: 12px; border-radius: 10px; padding: 1px 5px; margin-top: 10px;">
+                            Matrix
+                          </p>
+                        </div>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div class="universe-event-matrix" data-aos-duration="500" data-aos="fade-up">
+                  <div class="lgx-single-speaker2 lgx-single-speaker3 shadow-lg">
+                    <!--lgx-single-speaker-circle lgx-single-speaker2 lgx-single-speaker3-->
+                    <figure>
+                      <figcaption>
+                        <div class="fest-event__duration">
+                          <p style="text-align: right; margin-bottom: 10px;">
+                            <img src="/assets/img/icons/wall-clock.png" alt="clock" height="17px">
+                            3 hours
+                          </p>
+                        </div>
+
+                        <div data-aos-duration="1000" data-aos="fade-up" class="speaker-info">
+
+                          <h3 class="title"><a href="#" target="_blank">Watts of pitch</a></h3>
+                          <h4 class="subtitle">for CP Champs</h4>
+
+                          <p class="bg-info"
+                            style="font-size: 12px; border-radius: 10px; padding: 1px 5px; margin-top: 10px;">
+                            Matrix
+                          </p>
+                        </div>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div class="universe-event-matrix" data-aos-duration="500" data-aos="fade-up">
+                  <div class="lgx-single-speaker2 lgx-single-speaker3 shadow-lg">
+                    <!--lgx-single-speaker-circle lgx-single-speaker2 lgx-single-speaker3-->
+                    <figure>
+                      <figcaption>
+                        <div class="fest-event__duration">
+                          <p style="text-align: right; margin-bottom: 10px;">
+                            <img src="/assets/img/icons/wall-clock.png" alt="clock" height="17px">
+                            3 hours
+                          </p>
+                        </div>
+
+                        <div data-aos-duration="1000" data-aos="fade-up" class="speaker-info">
+
+                          <h3 class="title"><a href="#" target="_blank">Waste not HEal a lot</a></h3>
+                          <h4 class="subtitle">for CP Champs</h4>
+
+                          <p class="bg-info"
+                            style="font-size: 12px; border-radius: 10px; padding: 1px 5px; margin-top: 10px;">
+                            Matrix
+                          </p>
+                        </div>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div class="universe-event-matrix" data-aos-duration="500" data-aos="fade-up">
+                  <div class="lgx-single-speaker2 lgx-single-speaker3 shadow-lg">
+                    <!--lgx-single-speaker-circle lgx-single-speaker2 lgx-single-speaker3-->
+                    <figure>
+                      <figcaption>
+                        <div class="fest-event__duration">
+                          <p style="text-align: right; margin-bottom: 10px;">
+                            <img src="/assets/img/icons/wall-clock.png" alt="clock" height="17px">
+                            3 hours
+                          </p>
+                        </div>
+
+                        <div data-aos-duration="1000" data-aos="fade-up" class="speaker-info">
+
+                          <h3 class="title"><a href="#" target="_blank">Civil Savant Quiz</a></h3>
+                          <h4 class="subtitle">for CP Champs</h4>
+
+                          <p class="bg-info"
+                            style="font-size: 12px; border-radius: 10px; padding: 1px 5px; margin-top: 10px;">
+                            Matrix
+                          </p>
+                        </div>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div class="universe-event-matrix" data-aos-duration="500" data-aos="fade-up">
+                  <div class="lgx-single-speaker2 lgx-single-speaker3 shadow-lg">
+                    <!--lgx-single-speaker-circle lgx-single-speaker2 lgx-single-speaker3-->
+                    <figure>
+                      <figcaption>
+                        <div class="fest-event__duration">
+                          <p style="text-align: right; margin-bottom: 10px;">
+                            <img src="/assets/img/icons/wall-clock.png" alt="clock" height="17px">
+                            3 hours
+                          </p>
+                        </div>
+
+                        <div data-aos-duration="1000" data-aos="fade-up" class="speaker-info">
+
+                          <h3 class="title"><a href="#" target="_blank">Sustaina Craft Symposium</a></h3>
+                          <h4 class="subtitle">for CP Champs</h4>
+
+                          <p class="bg-info"
+                            style="font-size: 12px; border-radius: 10px; padding: 1px 5px; margin-top: 10px;">
+                            Matrix
+                          </p>
+                        </div>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div class="universe-event-matrix" data-aos-duration="500" data-aos="fade-up">
+                  <div class="lgx-single-speaker2 lgx-single-speaker3 shadow-lg">
+                    <!--lgx-single-speaker-circle lgx-single-speaker2 lgx-single-speaker3-->
+                    <figure>
+                      <figcaption>
+                        <div class="fest-event__duration">
+                          <p style="text-align: right; margin-bottom: 10px;">
+                            <img src="/assets/img/icons/wall-clock.png" alt="clock" height="17px">
+                            3 hours
+                          </p>
+                        </div>
+
+                        <div data-aos-duration="1000" data-aos="fade-up" class="speaker-info">
+
+                          <h3 class="title"><a href="#" target="_blank">SPOT-Structure</a></h3>
+                          <h4 class="subtitle">for CP Champs</h4>
+
+                          <p class="bg-info"
+                            style="font-size: 12px; border-radius: 10px; padding: 1px 5px; margin-top: 10px;">
+                            Matrix
+                          </p>
+                        </div>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div class="universe-event-matrix" data-aos-duration="500" data-aos="fade-up">
+                  <div class="lgx-single-speaker2 lgx-single-speaker3 shadow-lg">
+                    <!--lgx-single-speaker-circle lgx-single-speaker2 lgx-single-speaker3-->
+                    <figure>
+                      <figcaption>
+                        <div class="fest-event__duration">
+                          <p style="text-align: right; margin-bottom: 10px;">
+                            <img src="/assets/img/icons/wall-clock.png" alt="clock" height="17px">
+                            3 hours
+                          </p>
+                        </div>
+
+                        <div data-aos-duration="1000" data-aos="fade-up" class="speaker-info">
+
+                          <h3 class="title"><a href="#" target="_blank">CAD Modelling</a></h3>
+                          <h4 class="subtitle">for CP Champs</h4>
+
+                          <p class="bg-info"
+                            style="font-size: 12px; border-radius: 10px; padding: 1px 5px; margin-top: 10px;">
+                            Matrix
+                          </p>
+                        </div>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div class="universe-event-matrix" data-aos-duration="500" data-aos="fade-up">
+                  <div class="lgx-single-speaker2 lgx-single-speaker3 shadow-lg">
+                    <!--lgx-single-speaker-circle lgx-single-speaker2 lgx-single-speaker3-->
+                    <figure>
+                      <figcaption>
+                        <div class="fest-event__duration">
+                          <p style="text-align: right; margin-bottom: 10px;">
+                            <img src="/assets/img/icons/wall-clock.png" alt="clock" height="17px">
+                            3 hours
+                          </p>
+                        </div>
+
+                        <div data-aos-duration="1000" data-aos="fade-up" class="speaker-info">
+
+                          <h3 class="title"><a href="#" target="_blank">3D modelling</a></h3>
+                          <h4 class="subtitle">for CP Champs</h4>
+
+                          <p class="bg-info"
+                            style="font-size: 12px; border-radius: 10px; padding: 1px 5px; margin-top: 10px;">
+                            Matrix
+                          </p>
+                        </div>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div class="universe-event-matrix" data-aos-duration="500" data-aos="fade-up">
+                  <div class="lgx-single-speaker2 lgx-single-speaker3 shadow-lg">
+                    <!--lgx-single-speaker-circle lgx-single-speaker2 lgx-single-speaker3-->
+                    <figure>
+                      <figcaption>
+                        <div class="fest-event__duration">
+                          <p style="text-align: right; margin-bottom: 10px;">
+                            <img src="/assets/img/icons/wall-clock.png" alt="clock" height="17px">
+                            3 hours
+                          </p>
+                        </div>
+
+                        <div data-aos-duration="1000" data-aos="fade-up" class="speaker-info">
+
+                          <h3 class="title"><a href="#" target="_blank">CodeXpanse</a></h3>
+                          <h4 class="subtitle">for CP Champs</h4>
+
+                          <p class="bg-info"
+                            style="font-size: 12px; border-radius: 10px; padding: 1px 5px; margin-top: 10px;">
+                            Matrix
+                          </p>
+                        </div>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div class="universe-event-matrix" data-aos-duration="500" data-aos="fade-up">
+                  <div class="lgx-single-speaker2 lgx-single-speaker3 shadow-lg">
+                    <!--lgx-single-speaker-circle lgx-single-speaker2 lgx-single-speaker3-->
+                    <figure>
+                      <figcaption>
+                        <div class="fest-event__duration">
+                          <p style="text-align: right; margin-bottom: 10px;">
+                            <img src="/assets/img/icons/wall-clock.png" alt="clock" height="17px">
+                            3 hours
+                          </p>
+                        </div>
+
+                        <div data-aos-duration="1000" data-aos="fade-up" class="speaker-info">
+
+                          <h3 class="title"><a href="#" target="_blank">Coding in Alien Language</a></h3>
+                          <h4 class="subtitle">for CP Champs</h4>
+
+                          <p class="bg-info"
+                            style="font-size: 12px; border-radius: 10px; padding: 1px 5px; margin-top: 10px;">
+                            Matrix
+                          </p>
+                        </div>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+
+                <div class="universe-event-matrix" data-aos-duration="500" data-aos="fade-up">
                   <div class="lgx-single-speaker2 lgx-single-speaker3">
                     <!--lgx-single-speaker-circle lgx-single-speaker2 lgx-single-speaker3-->
                     <figure>
@@ -441,9 +1146,553 @@
                     </figure>
                   </div>
                 </div>
-              </div>
-              <div class="col-xs-12 col-sm-6 col-md-4" id="column3">
-                <div data-aos-duration="1000" data-aos="fade-up">
+                <div class="universe-event-matrix" data-aos-duration="500" data-aos="fade-up">
+                  <div class="lgx-single-speaker2 lgx-single-speaker3 shadow-lg">
+                    <!--lgx-single-speaker-circle lgx-single-speaker2 lgx-single-speaker3-->
+                    <figure>
+                      <figcaption>
+                        <div class="fest-event__duration">
+                          <p style="text-align: right; margin-bottom: 10px;">
+                            <img src="/assets/img/icons/wall-clock.png" alt="clock" height="17px">
+                            3 hours
+                          </p>
+                        </div>
+
+                        <div data-aos-duration="1000" data-aos="fade-up" class="speaker-info">
+
+                          <h3 class="title"><a href="#" target="_blank">Bridge Master</a></h3>
+                          <h4 class="subtitle">for CP Champs</h4>
+
+                          <p class="bg-info"
+                            style="font-size: 12px; border-radius: 10px; padding: 1px 5px; margin-top: 10px;">
+                            Matrix
+                          </p>
+                        </div>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div class="universe-event-matrix" data-aos-duration="500" data-aos="fade-up">
+                  <div class="lgx-single-speaker2 lgx-single-speaker3 shadow-lg">
+                    <!--lgx-single-speaker-circle lgx-single-speaker2 lgx-single-speaker3-->
+                    <figure>
+                      <figcaption>
+                        <div class="fest-event__duration">
+                          <p style="text-align: right; margin-bottom: 10px;">
+                            <img src="/assets/img/icons/wall-clock.png" alt="clock" height="17px">
+                            3 hours
+                          </p>
+                        </div>
+
+                        <div data-aos-duration="1000" data-aos="fade-up" class="speaker-info">
+
+                          <h3 class="title"><a href="#" target="_blank">Chain Reaction</a></h3>
+                          <h4 class="subtitle">for CP Champs</h4>
+
+                          <p class="bg-info"
+                            style="font-size: 12px; border-radius: 10px; padding: 1px 5px; margin-top: 10px;">
+                            Matrix
+                          </p>
+                        </div>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div class="universe-event-matrix" data-aos-duration="500" data-aos="fade-up">
+                  <div class="lgx-single-speaker2 lgx-single-speaker3 shadow-lg">
+                    <!--lgx-single-speaker-circle lgx-single-speaker2 lgx-single-speaker3-->
+                    <figure>
+                      <figcaption>
+                        <div class="fest-event__duration">
+                          <p style="text-align: right; margin-bottom: 10px;">
+                            <img src="/assets/img/icons/wall-clock.png" alt="clock" height="17px">
+                            3 hours
+                          </p>
+                        </div>
+
+                        <div data-aos-duration="1000" data-aos="fade-up" class="speaker-info">
+
+                          <h3 class="title"><a href="#" target="_blank">BioMads</a></h3>
+                          <h4 class="subtitle">for CP Champs</h4>
+
+                          <p class="bg-info"
+                            style="font-size: 12px; border-radius: 10px; padding: 1px 5px; margin-top: 10px;">
+                            Matrix
+                          </p>
+                        </div>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div class="universe-event-matrix" data-aos-duration="500" data-aos="fade-up">
+                  <div class="lgx-single-speaker2 lgx-single-speaker3 shadow-lg">
+                    <!--lgx-single-speaker-circle lgx-single-speaker2 lgx-single-speaker3-->
+                    <figure>
+                      <figcaption>
+                        <div class="fest-event__duration">
+                          <p style="text-align: right; margin-bottom: 10px;">
+                            <img src="/assets/img/icons/wall-clock.png" alt="clock" height="17px">
+                            3 hours
+                          </p>
+                        </div>
+
+                        <div data-aos-duration="1000" data-aos="fade-up" class="speaker-info">
+
+                          <h3 class="title"><a href="#" target="_blank">LudoTech Rush</a></h3>
+                          <h4 class="subtitle">for CP Champs</h4>
+
+                          <p class="bg-info"
+                            style="font-size: 12px; border-radius: 10px; padding: 1px 5px; margin-top: 10px;">
+                            Matrix
+                          </p>
+                        </div>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div class="universe-event-matrix" data-aos-duration="500" data-aos="fade-up">
+                  <div class="lgx-single-speaker2 lgx-single-speaker3 shadow-lg">
+                    <!--lgx-single-speaker-circle lgx-single-speaker2 lgx-single-speaker3-->
+                    <figure>
+                      <figcaption>
+                        <div class="fest-event__duration">
+                          <p style="text-align: right; margin-bottom: 10px;">
+                            <img src="/assets/img/icons/wall-clock.png" alt="clock" height="17px">
+                            3 hours
+                          </p>
+                        </div>
+
+                        <div data-aos-duration="1000" data-aos="fade-up" class="speaker-info">
+
+                          <h3 class="title"><a href="#" target="_blank">Hearts and CKts</a></h3>
+                          <h4 class="subtitle">for CP Champs</h4>
+
+                          <p class="bg-info"
+                            style="font-size: 12px; border-radius: 10px; padding: 1px 5px; margin-top: 10px;">
+                            Matrix
+                          </p>
+                        </div>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div class="universe-event-matrix" data-aos-duration="500" data-aos="fade-up">
+                  <div class="lgx-single-speaker2 lgx-single-speaker3 shadow-lg">
+                    <!--lgx-single-speaker-circle lgx-single-speaker2 lgx-single-speaker3-->
+                    <figure>
+                      <figcaption>
+                        <div class="fest-event__duration">
+                          <p style="text-align: right; margin-bottom: 10px;">
+                            <img src="/assets/img/icons/wall-clock.png" alt="clock" height="17px">
+                            3 hours
+                          </p>
+                        </div>
+
+                        <div data-aos-duration="1000" data-aos="fade-up" class="speaker-info">
+
+                          <h3 class="title"><a href="#" target="_blank">Goblet of Fire</a></h3>
+                          <h4 class="subtitle">for CP Champs</h4>
+
+                          <p class="bg-info"
+                            style="font-size: 12px; border-radius: 10px; padding: 1px 5px; margin-top: 10px;">
+                            Matrix
+                          </p>
+                        </div>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div class="universe-event-matrix" data-aos-duration="500" data-aos="fade-up">
+                  <div class="lgx-single-speaker2 lgx-single-speaker3 shadow-lg">
+                    <!--lgx-single-speaker-circle lgx-single-speaker2 lgx-single-speaker3-->
+                    <figure>
+                      <figcaption>
+                        <div class="fest-event__duration">
+                          <p style="text-align: right; margin-bottom: 10px;">
+                            <img src="/assets/img/icons/wall-clock.png" alt="clock" height="17px">
+                            3 hours
+                          </p>
+                        </div>
+
+                        <div data-aos-duration="1000" data-aos="fade-up" class="speaker-info">
+
+                          <h3 class="title"><a href="#" target="_blank">I style</a></h3>
+                          <h4 class="subtitle">for CP Champs</h4>
+
+                          <p class="bg-info"
+                            style="font-size: 12px; border-radius: 10px; padding: 1px 5px; margin-top: 10px;">
+                            Matrix
+                          </p>
+                        </div>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div class="universe-event-matrix" data-aos-duration="500" data-aos="fade-up">
+                  <div class="lgx-single-speaker2 lgx-single-speaker3 shadow-lg">
+                    <!--lgx-single-speaker-circle lgx-single-speaker2 lgx-single-speaker3-->
+                    <figure>
+                      <figcaption>
+                        <div class="fest-event__duration">
+                          <p style="text-align: right; margin-bottom: 10px;">
+                            <img src="/assets/img/icons/wall-clock.png" alt="clock" height="17px">
+                            3 hours
+                          </p>
+                        </div>
+
+                        <div data-aos-duration="1000" data-aos="fade-up" class="speaker-info">
+
+                          <h3 class="title"><a href="#" target="_blank">Morality Matrix</a></h3>
+                          <h4 class="subtitle">for CP Champs</h4>
+
+                          <p class="bg-info"
+                            style="font-size: 12px; border-radius: 10px; padding: 1px 5px; margin-top: 10px;">
+                            Matrix
+                          </p>
+                        </div>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div class="universe-event-matrix" data-aos-duration="500" data-aos="fade-up">
+                  <div class="lgx-single-speaker2 lgx-single-speaker3 shadow-lg">
+                    <!--lgx-single-speaker-circle lgx-single-speaker2 lgx-single-speaker3-->
+                    <figure>
+                      <figcaption>
+                        <div class="fest-event__duration">
+                          <p style="text-align: right; margin-bottom: 10px;">
+                            <img src="/assets/img/icons/wall-clock.png" alt="clock" height="17px">
+                            3 hours
+                          </p>
+                        </div>
+
+                        <div data-aos-duration="1000" data-aos="fade-up" class="speaker-info">
+
+                          <h3 class="title"><a href="#" target="_blank">Pixel Perfect</a></h3>
+                          <h4 class="subtitle">for CP Champs</h4>
+
+                          <p class="bg-info"
+                            style="font-size: 12px; border-radius: 10px; padding: 1px 5px; margin-top: 10px;">
+                            Matrix
+                          </p>
+                        </div>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div class="universe-event-matrix" data-aos-duration="500" data-aos="fade-up">
+                  <div class="lgx-single-speaker2 lgx-single-speaker3 shadow-lg">
+                    <!--lgx-single-speaker-circle lgx-single-speaker2 lgx-single-speaker3-->
+                    <figure>
+                      <figcaption>
+                        <div class="fest-event__duration">
+                          <p style="text-align: right; margin-bottom: 10px;">
+                            <img src="/assets/img/icons/wall-clock.png" alt="clock" height="17px">
+                            3 hours
+                          </p>
+                        </div>
+
+                        <div data-aos-duration="1000" data-aos="fade-up" class="speaker-info">
+
+                          <h3 class="title"><a href="#" target="_blank">RushHour</a></h3>
+                          <h4 class="subtitle">for CP Champs</h4>
+
+                          <p class="bg-info"
+                            style="font-size: 12px; border-radius: 10px; padding: 1px 5px; margin-top: 10px;">
+                            Matrix
+                          </p>
+                        </div>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div class="universe-event-matrix" data-aos-duration="500" data-aos="fade-up">
+                  <div class="lgx-single-speaker2 lgx-single-speaker3 shadow-lg">
+                    <!--lgx-single-speaker-circle lgx-single-speaker2 lgx-single-speaker3-->
+                    <figure>
+                      <figcaption>
+                        <div class="fest-event__duration">
+                          <p style="text-align: right; margin-bottom: 10px;">
+                            <img src="/assets/img/icons/wall-clock.png" alt="clock" height="17px">
+                            3 hours
+                          </p>
+                        </div>
+
+                        <div data-aos-duration="1000" data-aos="fade-up" class="speaker-info">
+
+                          <h3 class="title"><a href="#" target="_blank">Ventura-Business Plan</a></h3>
+                          <h4 class="subtitle">for CP Champs</h4>
+
+                          <p class="bg-info"
+                            style="font-size: 12px; border-radius: 10px; padding: 1px 5px; margin-top: 10px;">
+                            Matrix
+                          </p>
+                        </div>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div class="universe-event-matrix" data-aos-duration="500" data-aos="fade-up">
+                  <div class="lgx-single-speaker2 lgx-single-speaker3 shadow-lg">
+                    <!--lgx-single-speaker-circle lgx-single-speaker2 lgx-single-speaker3-->
+                    <figure>
+                      <figcaption>
+                        <div class="fest-event__duration">
+                          <p style="text-align: right; margin-bottom: 10px;">
+                            <img src="/assets/img/icons/wall-clock.png" alt="clock" height="17px">
+                            3 hours
+                          </p>
+                        </div>
+
+                        <div data-aos-duration="1000" data-aos="fade-up" class="speaker-info">
+
+                          <h3 class="title"><a href="#" target="_blank">Pottery Plunge</a></h3>
+                          <h4 class="subtitle">for CP Champs</h4>
+
+                          <p class="bg-info"
+                            style="font-size: 12px; border-radius: 10px; padding: 1px 5px; margin-top: 10px;">
+                            Matrix
+                          </p>
+                        </div>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div class="universe-event-matrix" data-aos-duration="500" data-aos="fade-up">
+                  <div class="lgx-single-speaker2 lgx-single-speaker3 shadow-lg">
+                    <!--lgx-single-speaker-circle lgx-single-speaker2 lgx-single-speaker3-->
+                    <figure>
+                      <figcaption>
+                        <div class="fest-event__duration">
+                          <p style="text-align: right; margin-bottom: 10px;">
+                            <img src="/assets/img/icons/wall-clock.png" alt="clock" height="17px">
+                            3 hours
+                          </p>
+                        </div>
+
+                        <div data-aos-duration="1000" data-aos="fade-up" class="speaker-info">
+
+                          <h3 class="title"><a href="#" target="_blank">A Tech-Twisted Snakes and Ladders Challenge</a>
+                          </h3>
+                          <h4 class="subtitle">for CP Champs</h4>
+
+                          <p class="bg-info"
+                            style="font-size: 12px; border-radius: 10px; padding: 1px 5px; margin-top: 10px;">
+                            Matrix
+                          </p>
+                        </div>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div class="universe-event-matrix" data-aos-duration="500" data-aos="fade-up">
+                  <div class="lgx-single-speaker2 lgx-single-speaker3 shadow-lg">
+                    <!--lgx-single-speaker-circle lgx-single-speaker2 lgx-single-speaker3-->
+                    <figure>
+                      <figcaption>
+                        <div class="fest-event__duration">
+                          <p style="text-align: right; margin-bottom: 10px;">
+                            <img src="/assets/img/icons/wall-clock.png" alt="clock" height="17px">
+                            3 hours
+                          </p>
+                        </div>
+
+                        <div data-aos-duration="1000" data-aos="fade-up" class="speaker-info">
+
+                          <h3 class="title"><a href="#" target="_blank">Marketing Marvel</a></h3>
+                          <h4 class="subtitle">for CP Champs</h4>
+
+                          <p class="bg-info"
+                            style="font-size: 12px; border-radius: 10px; padding: 1px 5px; margin-top: 10px;">
+                            Matrix
+                          </p>
+                        </div>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div class="universe-event-matrix" data-aos-duration="500" data-aos="fade-up">
+                  <div class="lgx-single-speaker2 lgx-single-speaker3 shadow-lg">
+                    <!--lgx-single-speaker-circle lgx-single-speaker2 lgx-single-speaker3-->
+                    <figure>
+                      <figcaption>
+                        <div class="fest-event__duration">
+                          <p style="text-align: right; margin-bottom: 10px;">
+                            <img src="/assets/img/icons/wall-clock.png" alt="clock" height="17px">
+                            3 hours
+                          </p>
+                        </div>
+
+                        <div data-aos-duration="1000" data-aos="fade-up" class="speaker-info">
+
+                          <h3 class="title"><a href="#" target="_blank">Secret of shadow</a></h3>
+                          <h4 class="subtitle">for CP Champs</h4>
+
+                          <p class="bg-info"
+                            style="font-size: 12px; border-radius: 10px; padding: 1px 5px; margin-top: 10px;">
+                            Matrix
+                          </p>
+                        </div>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div class="universe-event-matrix" data-aos-duration="500" data-aos="fade-up">
+                  <div class="lgx-single-speaker2 lgx-single-speaker3 shadow-lg">
+                    <!--lgx-single-speaker-circle lgx-single-speaker2 lgx-single-speaker3-->
+                    <figure>
+                      <figcaption>
+                        <div class="fest-event__duration">
+                          <p style="text-align: right; margin-bottom: 10px;">
+                            <img src="/assets/img/icons/wall-clock.png" alt="clock" height="17px">
+                            3 hours
+                          </p>
+                        </div>
+
+                        <div data-aos-duration="1000" data-aos="fade-up" class="speaker-info">
+
+                          <h3 class="title"><a href="#" target="_blank">M S Ramaiah Memorial Quiz</a></h3>
+                          <h4 class="subtitle">for CP Champs</h4>
+
+                          <p class="bg-info"
+                            style="font-size: 12px; border-radius: 10px; padding: 1px 5px; margin-top: 10px;">
+                            Matrix
+                          </p>
+                        </div>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div class="universe-event-matrix" data-aos-duration="500" data-aos="fade-up">
+                  <div class="lgx-single-speaker2 lgx-single-speaker3 shadow-lg">
+                    <!--lgx-single-speaker-circle lgx-single-speaker2 lgx-single-speaker3-->
+                    <figure>
+                      <figcaption>
+                        <div class="fest-event__duration">
+                          <p style="text-align: right; margin-bottom: 10px;">
+                            <img src="/assets/img/icons/wall-clock.png" alt="clock" height="17px">
+                            3 hours
+                          </p>
+                        </div>
+
+                        <div data-aos-duration="1000" data-aos="fade-up" class="speaker-info">
+
+                          <h3 class="title"><a href="#" target="_blank">Poster Making</a></h3>
+                          <h4 class="subtitle">for CP Champs</h4>
+
+                          <p class="bg-info"
+                            style="font-size: 12px; border-radius: 10px; padding: 1px 5px; margin-top: 10px;">
+                            Matrix
+                          </p>
+                        </div>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div class="universe-event-matrix" data-aos-duration="500" data-aos="fade-up">
+                  <div class="lgx-single-speaker2 lgx-single-speaker3 shadow-lg">
+                    <!--lgx-single-speaker-circle lgx-single-speaker2 lgx-single-speaker3-->
+                    <figure>
+                      <figcaption>
+                        <div class="fest-event__duration">
+                          <p style="text-align: right; margin-bottom: 10px;">
+                            <img src="/assets/img/icons/wall-clock.png" alt="clock" height="17px">
+                            3 hours
+                          </p>
+                        </div>
+
+                        <div data-aos-duration="1000" data-aos="fade-up" class="speaker-info">
+
+                          <h3 class="title"><a href="#" target="_blank">THE PHANTOM PROTEIN PARADOX</a></h3>
+                          <h4 class="subtitle">for CP Champs</h4>
+
+                          <p class="bg-info"
+                            style="font-size: 12px; border-radius: 10px; padding: 1px 5px; margin-top: 10px;">
+                            Matrix
+                          </p>
+                        </div>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div class="universe-event-matrix" data-aos-duration="500" data-aos="fade-up">
+                  <div class="lgx-single-speaker2 lgx-single-speaker3 shadow-lg">
+                    <!--lgx-single-speaker-circle lgx-single-speaker2 lgx-single-speaker3-->
+                    <figure>
+                      <figcaption>
+                        <div class="fest-event__duration">
+                          <p style="text-align: right; margin-bottom: 10px;">
+                            <img src="/assets/img/icons/wall-clock.png" alt="clock" height="17px">
+                            3 hours
+                          </p>
+                        </div>
+
+                        <div data-aos-duration="1000" data-aos="fade-up" class="speaker-info">
+
+                          <h3 class="title"><a href="#" target="_blank">Nfity</a></h3>
+                          <h4 class="subtitle">for CP Champs</h4>
+
+                          <p class="bg-info"
+                            style="font-size: 12px; border-radius: 10px; padding: 1px 5px; margin-top: 10px;">
+                            Matrix
+                          </p>
+                        </div>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div class="universe-event-matrix" data-aos-duration="500" data-aos="fade-up">
+                  <div class="lgx-single-speaker2 lgx-single-speaker3 shadow-lg">
+                    <!--lgx-single-speaker-circle lgx-single-speaker2 lgx-single-speaker3-->
+                    <figure>
+                      <figcaption>
+                        <div class="fest-event__duration">
+                          <p style="text-align: right; margin-bottom: 10px;">
+                            <img src="/assets/img/icons/wall-clock.png" alt="clock" height="17px">
+                            3 hours
+                          </p>
+                        </div>
+
+                        <div data-aos-duration="1000" data-aos="fade-up" class="speaker-info">
+
+                          <h3 class="title"><a href="#" target="_blank">The platform</a></h3>
+                          <h4 class="subtitle">for CP Champs</h4>
+
+                          <p class="bg-info"
+                            style="font-size: 12px; border-radius: 10px; padding: 1px 5px; margin-top: 10px;">
+                            Matrix
+                          </p>
+                        </div>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div class="universe-event-matrix" data-aos-duration="500" data-aos="fade-up">
+                  <div class="lgx-single-speaker2 lgx-single-speaker3">
+                    <!--lgx-single-speaker-circle lgx-single-speaker2 lgx-single-speaker3-->
+                    <figure>
+                      <figcaption>
+                        <div class="fest-event__duration">
+                          <p style="text-align: right; margin-bottom: 10px;">
+                            <img src="/assets/img/icons/wall-clock.png" alt="clock" height="17px">
+                            3 hours
+                          </p>
+                        </div>
+
+                        <div data-aos-duration="1000" data-aos="fade-up" class="speaker-info">
+                          <h3 class="title"><a href="#" target="_blank">DataThon</a></h3>
+                          <h4 class="subtitle">for ML Enthusiasts</h4>
+
+                          <p class="bg-info"
+                            style="font-size: 12px; border-radius: 10px; padding: 1px 5px; margin-top: 10px;">
+                            Robot
+                          </p>
+                        </div>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div class="universe-event-matrix" data-aos-duration="500" data-aos="fade-up">
                   <div class="lgx-single-speaker2 lgx-single-speaker3">
                     <!--lgx-single-speaker-circle lgx-single-speaker2 lgx-single-speaker3-->
                     <figure>
@@ -468,7 +1717,7 @@
                     </figure>
                   </div>
                 </div>
-                <div data-aos-duration="1000" data-aos="fade-up">
+                <div class="universe-event-matrix" data-aos-duration="500" data-aos="fade-up">
                   <div class="lgx-single-speaker2 lgx-single-speaker3">
                     <!--lgx-single-speaker-circle lgx-single-speaker2 lgx-single-speaker3-->
                     <figure>
@@ -496,10 +1745,10 @@
               </div>
 
               <div style="text-align: center; margin-top: 20px;">
-                <button onclick="showAllColumns()" style="background-color: yellow; color: black;">All</button>
-                <button onclick="showColumn(1)" style="background-color: yellow; color: black;">ALIEN</button>
-                <button onclick="showColumn(2)" style="background-color: yellow; color: black;">ROBOT</button>
-                <button onclick="showColumn(3)" style="background-color: yellow; color: black;">MATRIX</button>
+                <button onclick="showAll()" style="background-color: yellow; color: black;">All</button>
+                <button onclick="showEvents('alien')" style="background-color: yellow; color: black;">ALIEN</button>
+                <button onclick="showEvents('robot')" style="background-color: yellow; color: black;">ROBOT</button>
+                <button onclick="showEvents('matrix')" style="background-color: yellow; color: black;">MATRIX</button>
               </div>
 
             </div>
@@ -519,11 +1768,10 @@
 
 
     <script>
-      function showAllColumns() {
-        // Show all columns
-        document.getElementById("column1").style.display = "block";
-        document.getElementById("column2").style.display = "block";
-        document.getElementById("column3").style.display = "block";
+      function showAll() {
+        document.querySelector(`.universe-event-matrix`).style.display = 'block';
+        document.querySelector(`.universe-event-alien`).style.display = 'block';
+        document.querySelector(`.universe-event-robot`).style.display = 'block';
       }
 
       function showColumn(columnNumber) {
@@ -534,6 +1782,25 @@
 
         // Show the selected column
         document.getElementById("column" + columnNumber).style.display = "block";
+      }
+
+      function showEvents(name) {
+        console.log(name)
+        if (name === "matrix") {
+          document.querySelector(`.universe-event-matrix`).style.display = 'block';
+          document.querySelector(`.universe-event-alien`).style.display = 'none';
+          document.querySelector(`.universe-event-robot`).style.display = 'none';
+        }
+        if (name === "alien") {
+          document.querySelector(`.universe-event-matrix`).style.display = 'none';
+          document.querySelector(`.universe-event-alien`).style.display = 'block';
+          document.querySelector(`.universe-event-robot`).style.display = 'none';
+        }
+        if (name === "robot") {
+          document.querySelector(`.universe-event-matrix`).style.display = 'none';
+          document.querySelector(`.universe-event-alien`).style.display = 'none';
+          document.querySelector(`.universe-event-robot`).style.display = 'block';
+        }
       }
     </script>
 
