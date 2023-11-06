@@ -8366,6 +8366,11 @@ button:hover:after {
     color: #fff;
   }
 
+  .event-grid {
+    grid-template-columns: auto;
+    padding: 0 2rem;
+  }
+
   .hero-banner {
     display: none;
   }
