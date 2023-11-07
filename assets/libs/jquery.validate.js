@@ -16,7 +16,7 @@
 
     $.extend($.fn, {
         // http://jqueryvalidation.org/validate/
-        validate: function( options ) {
+        valiDate : function( options ) {
 
             // if nothing is selected, return nothing; can't chain anyway
             if ( !this.length ) {
@@ -314,7 +314,7 @@
             remote: "Please fix this field.",
             email: "Please enter a valid email address.",
             url: "Please enter a valid URL.",
-            date: "Please enter a valid date.",
+            Date : "Please enter a valid date.",
             dateISO: "Please enter a valid date ( ISO ).",
             number: "Please enter a valid number.",
             digits: "Please enter only digits.",
@@ -931,7 +931,7 @@
             required: { required: true },
             email: { email: true },
             url: { url: true },
-            date: { date: true },
+            Date : { Date : true },
             dateISO: { dateISO: true },
             number: { number: true },
             digits: { digits: true },
@@ -1157,7 +1157,7 @@
             },
 
             // http://jqueryvalidation.org/date-method/
-            date: function( value, element ) {
+            Date : function( value, element ) {
                 return this.optional( element ) || !/Invalid|NaN/.test( new Date( value ).toString() );
             },
 
