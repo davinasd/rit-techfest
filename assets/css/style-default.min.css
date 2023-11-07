@@ -79,7 +79,7 @@ h3 {
   line-height: 3.9000000000000004rem;
   line-height: 4rem;
 }
-.register-btn {
+.register-btn1 {
   background-color: yellow;
   color: black;
   text-decoration: none;
@@ -90,6 +90,7 @@ h3 {
   align-items: center;
   justify-content: center;
 }
+
 .h4,
 .h5,
 h4,
