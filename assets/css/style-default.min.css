@@ -8104,7 +8104,7 @@ button:hover:after {
   margin-bottom: 4.2rem;
 }
 
-.register-btn {
+.register{
   background-color: yellow;
   color: black;
   text-decoration: none;
@@ -8116,7 +8116,7 @@ button:hover:after {
   justify-content: center;
 }
 
-.register-btn:hover {
+.register:hover {
   color: black;
 }
 
