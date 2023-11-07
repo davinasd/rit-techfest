@@ -7764,7 +7764,7 @@ button:hover:after {
   background-size: cover;
   filter: blur(2.5px);
   -webkit-filter: blur(2.5px);
-  opacity: 0.9;
+  opacity: 0.4;
 }
 
 .lgx-banner .lgx-inner {
@@ -8007,26 +8007,27 @@ button:hover:after {
   height: 400px;
   width: 400px;
   position: absolute;
-  top: 45%;
-  left: 5%;
-  transform: rotate(-22deg);
+  top: 30%;
+  left: 0%;
   z-index: -1;
   opacity: 80%;
 }
+
 .watermark-logo-2 {
   height: 400px;
   width: 400px;
   position: absolute;
-  right: 5%;
-  top: 15%;
+  right: 0%;
+  top: 30%;
   z-index: -1;
-  opacity: 80%;
+  opacity: 0.8;
 }
 
 .watermark-logo img {
   height: 100%;
   width: 100%;
 }
+
 .watermark-logo-2 img {
   height: 100%;
   width: auto;
@@ -8364,6 +8365,12 @@ button:hover:after {
 @media (max-width: 767px) {
   .lgx-banner-info {
     color: #fff;
+  }
+
+  .watermark-logo {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -20%);
   }
 
   .event-grid {
