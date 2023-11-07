@@ -192,7 +192,9 @@
                   <style>
                     
                   </style>
-                 
+                  <div id="slider-container1">
+                    <div id="slider-text1">REGISTRATION STARTING SOON !!!</div>
+                  </div>
                   <div class="header-banner__logo-phone">
                     <div class="lgx-logo">
                       <a href="index.html" class="lgx-scroll">
@@ -275,11 +277,47 @@
           <!-- //.INNER -->
         </div>
       </div>
+
     </section>
+  
     <!--BANNER END-->
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!--ABOUT-->
+    <style>
+      <style>
+  #slider-container1 {
+    overflow: hidden;
+    position: relative;
+    width: 300px; /* Adjust the width as needed */
+    height: 50px; /* Adjust the height as needed */
+    border: 1px solid #ccc;
+    background-color: purple; /* Set the background color to purple */
+  }
+  #slider-text1 {
+    position: absolute;
+    white-space: nowrap;
+    color: yellow; /* Set the text color to yellow */
+    font-weight: bold; /* Make the text bold */
+    font-size: 24px; /* Set the text size to 24px (adjust as needed) */
+  }
+</style>
+
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+   
+  
+    <script>
+      $(document).ready(function() {
+        function animateSlider() {
+          $('#slider-text1').css({ left: '100%' });
+          $('#slider-text1').animate({ left: '-100%' }, 10000, 'linear', animateSlider);
+        }
+  
+        animateSlider();
+      });
+    </script>
     <section>
       <div id="imageSlider">
         <div><img src="assets\img\home-poster.png" alt="Image 1" style="width: 100vw;"></div>
@@ -510,7 +548,7 @@
                             aria-labelledby="headingTwo">
                             <div class="panel-body">
                               <p class="text">
-                                
+                                Solve, Relay, Triumph !!!
                               </p>
                               <h4 class="location"><strong>VENUE:</strong>
                                 <p target="_blank">RIT Quadrangle</p>
