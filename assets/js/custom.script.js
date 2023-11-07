@@ -10,9 +10,9 @@
 
     $(window).on("scroll", function () {
       var windowpos = $(window).scrollTop();
-      if (windowpos >= pos.top) {
+      if (windowpos >= 350) {
         s.addClass("menu-onscroll");
-      } else {
+      } else if (windowpos < 250) {
         s.removeClass("menu-onscroll");
       }
     });
@@ -122,11 +122,11 @@
         var $this = $(this).html(
           event.strftime(
             "" +
-              /*+ '<span class="lgx-weecks">%w <i> weeks </i></span> '*/
-              '<span class="lgx-days">%D <i> Days </i></span> ' +
-              '<span class="lgx-hr">%H <i> Hour </i></span> ' +
-              '<span class="lgx-min">%M <i> Min </i></span> ' +
-              '<span class="lgx-sec">%S <i> Sec </i></span>'
+            /*+ '<span class="lgx-weecks">%w <i> weeks </i></span> '*/
+            '<span class="lgx-days">%D <i> Days </i></span> ' +
+            '<span class="lgx-hr">%H <i> Hour </i></span> ' +
+            '<span class="lgx-min">%M <i> Min </i></span> ' +
+            '<span class="lgx-sec">%S <i> Sec </i></span>'
           )
         );
       });
@@ -552,10 +552,10 @@
                   } else {
                     $("#" + ajaxResponse.error_field[i]).after(
                       '<p id="' +
-                        ajaxResponse.error_field[i] +
-                        '-error" class="help-block">' +
-                        ajaxResponse.message[ajaxResponse.error_field[i]] +
-                        "</p>"
+                      ajaxResponse.error_field[i] +
+                      '-error" class="help-block">' +
+                      ajaxResponse.message[ajaxResponse.error_field[i]] +
+                      "</p>"
                     );
                   }
                 }
@@ -595,7 +595,7 @@
               $("#lgx-form-modal").modal("hide");
             }, 5000);
           },
-          complete: function () {},
+          complete: function () { },
         });
 
         return false;
