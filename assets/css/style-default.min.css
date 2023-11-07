@@ -79,17 +79,6 @@ h3 {
   line-height: 3.9000000000000004rem;
   line-height: 4rem;
 }
-.register-btn1 {
-  background-color: yellow;
-  color: black;
-  text-decoration: none;
-  padding: 1.2rem;
-  width: 150px;
-  border-radius: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
 .h4,
 .h5,
