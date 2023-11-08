@@ -101,14 +101,23 @@
       position: relative;
     }
 
-    #imageSlider {
-      width: 100%;
+    .slider-container {
+      width: 100vw;
+      /* 100% of the viewport width */
       overflow: hidden;
     }
 
-    .image-slider {
+    .slider {
       display: flex;
+      width: 300%;
+      /* Three times the width of the viewport to accommodate three images */
       transition: transform 0.5s ease-in-out;
+    }
+
+    .slider img {
+      width: 33.333%;
+      /* Each image occupies 33.333% of the slider (for three images) */
+      object-fit: cover;
     }
 
     #lgx-sponsors,
@@ -380,10 +389,13 @@
           animateSlider();
         });
       </script>
+
       <section>
-        <div id="imageSlider">
-          <div class="image-slider">
-            <img src="assets\img\hp.jpg">
+        <div class="slider-container">
+          <div class="slider">
+            <img src="assets/img/TechRelay.png" class="slider-img" alt="Image 1">
+            <img src="assets/img/TechRelay.png" class="slider-img" alt="Image 2">
+            <img src="assets/img/TechRelay.png" class="slider-img" alt="Image 3">
           </div>
         </div>
       </section>
@@ -2640,18 +2652,18 @@
     const robot = document.getElementsByClassName("universe-event-robot");
     const general = document.getElementsByClassName("universe-event-general");
 
-    const slider = document.querySelector('#imageSlider');
-    const images = document.querySelectorAll('.slider img');
+    const slider = document.querySelector('.slider');
+    const images = document.querySelectorAll('.slider-img');
     let currentIndex = 0;
+    const imageWidth = images[0].clientWidth;
 
     function updateSlider() {
-      const newIndex = (currentIndex + 1) % images.length;
-      const translateValue = -100 * newIndex + '%';
+      currentIndex = (currentIndex + 1) % images.length;
+      const translateValue = -currentIndex * imageWidth + 'px';
       slider.style.transform = 'translateX(' + translateValue + ')';
-      currentIndex = newIndex;
     }
 
-    setInterval(updateSlider, 3000);
+    setInterval(updateSlider, 2000);
 
     function showAll() {
       for (let i = 0; i < matrix.length; i++) {
