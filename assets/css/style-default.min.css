@@ -7746,7 +7746,7 @@ button:hover:after {
   background: purple;
 }
 
-.event-grid {
+.event-grid, .event-grid3, .event-grid2 {
   display: grid;
   grid-template-columns: auto auto auto;
   gap: 20px;

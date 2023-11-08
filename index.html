@@ -102,22 +102,17 @@
     }
 
     .slider-container {
-      width: 100vw;
-      /* 100% of the viewport width */
-      overflow: hidden;
-    }
-
-    .slider {
       display: flex;
-      width: 300%;
-      /* Three times the width of the viewport to accommodate three images */
-      transition: transform 0.5s ease-in-out;
+      align-items: center;
+      justify-content: center;
+      margin: 4rem 0;
     }
 
-    .slider img {
-      width: 33.333%;
-      /* Each image occupies 33.333% of the slider (for three images) */
-      object-fit: cover;
+    .slider-container a {
+      padding: 1rem;
+      background: yellow;
+      border-radius: 10px;
+      color: black;
     }
 
     #lgx-sponsors,
@@ -389,11 +384,9 @@
 
       <section>
         <div class="slider-container">
-          <div class="slider">
-            <img src="assets/img/TechRelay.png" class="slider-img" alt="Image 1">
-            <img src="assets/img/TechRelay.png" class="slider-img" alt="Image 2">
-            <img src="assets/img/TechRelay.png" class="slider-img" alt="Image 3">
-          </div>
+            <a href="event_posters.html">
+              All Event Posters
+              </a>
         </div>
       </section>
 
