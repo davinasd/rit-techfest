@@ -202,10 +202,10 @@
       // Reset the countdown instance under data attr (Thanks to @assiotis)
       delete this.$el.data().countdownInstance;
     },
-    setFinalDate: function (value) {
+    setFinalDate : function (value) {
       this.finalDate = parseDateString(value); // Cast the given date
     },
-    update: function () {
+    upDate : function () {
       // Stop if dom is not in the html (Thanks to @dleavitt)
       if (this.$el.closest("html").length === 0) {
         this.remove();

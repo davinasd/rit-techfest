@@ -7746,7 +7746,7 @@ button:hover:after {
   background: purple;
 }
 
-.event-grid {
+.event-grid, .event-grid3, .event-grid2 {
   display: grid;
   grid-template-columns: auto auto auto;
   gap: 20px;
@@ -8104,7 +8104,7 @@ button:hover:after {
   margin-bottom: 4.2rem;
 }
 
-.register-btn {
+.register{
   background-color: yellow;
   color: black;
   text-decoration: none;
@@ -8116,7 +8116,7 @@ button:hover:after {
   justify-content: center;
 }
 
-.register-btn:hover {
+.register:hover {
   color: black;
 }
 
@@ -9662,11 +9662,11 @@ button:hover:after {
 }
 
 .lgx-speakers2 {
-  background: url(../img/speakers-bg-black.jpg) bottom left no-repeat fixed;
-  -webkit-background-size: auto auto, cover;
-  -o-background-size: auto auto, cover;
-  -moz-background-size: auto auto, cover;
-  background-size: auto auto, cover;
+  background: url(../img/speakers-bg-black.jpg) no-repeat;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
 }
 
 .lgx-speakers2 .lgx-inner {

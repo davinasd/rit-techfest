@@ -909,7 +909,7 @@
   };
 
   TC_Instance.prototype.default_options = {
-    ref_date: new Date(),
+    ref_Date : new Date(),
     start: true,
     animation: "smooth",
     count_past_zero: true,
