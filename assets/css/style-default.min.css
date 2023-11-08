@@ -9662,11 +9662,11 @@ button:hover:after {
 }
 
 .lgx-speakers2 {
-  background: url(../img/speakers-bg-black.jpg) bottom left no-repeat fixed;
-  -webkit-background-size: auto auto, cover;
-  -o-background-size: auto auto, cover;
-  -moz-background-size: auto auto, cover;
-  background-size: auto auto, cover;
+  background: url(../img/speakers-bg-black.jpg) no-repeat;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
 }
 
 .lgx-speakers2 .lgx-inner {
