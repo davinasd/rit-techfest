@@ -96,14 +96,18 @@
       position: relative;
     }
 
-    #imageSlider {
-      width: 100%;
-      overflow: hidden;
+    .slider-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 4rem 0;
     }
 
-    .image-slider {
-      display: flex;
-      transition: transform 0.5s ease-in-out;
+    .slider-container a {
+      padding: 1rem;
+      background: yellow;
+      border-radius: 10px;
+      color: black;
     }
 
     #lgx-sponsors,
@@ -364,11 +368,12 @@
           animateSlider();
         });
       </script>
+
       <section>
-        <div id="imageSlider">
-          <div class="image-slider">
-            <img src="assets\img\hp.jpg">
-          </div>
+        <div class="slider-container">
+            <a href="event_posters.html">
+              All Event Posters
+              </a>
         </div>
       </section>
 
@@ -2610,18 +2615,18 @@
     const robot = document.getElementsByClassName("universe-event-robot");
     const general = document.getElementsByClassName("universe-event-general");
 
-    const slider = document.querySelector('#imageSlider');
-    const images = document.querySelectorAll('.slider img');
+    const slider = document.querySelector('.slider');
+    const images = document.querySelectorAll('.slider-img');
     let currentIndex = 0;
+    const imageWidth = images[0].clientWidth;
 
     function updateSlider() {
-      const newIndex = (currentIndex + 1) % images.length;
-      const translateValue = -100 * newIndex + '%';
+      currentIndex = (currentIndex + 1) % images.length;
+      const translateValue = -currentIndex * imageWidth + 'px';
       slider.style.transform = 'translateX(' + translateValue + ')';
-      currentIndex = newIndex;
     }
 
-    setInterval(updateSlider, 3000);
+    setInterval(updateSlider, 2500);
 
     function showAll() {
       for (let i = 0; i < matrix.length; i++) {
