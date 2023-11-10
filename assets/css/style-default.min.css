@@ -7746,7 +7746,9 @@ button:hover:after {
   background: purple;
 }
 
-.event-grid, .event-grid3, .event-grid2 {
+.event-grid,
+.event-grid3,
+.event-grid2 {
   display: grid;
   grid-template-columns: auto auto auto;
   gap: 20px;
@@ -8104,7 +8106,7 @@ button:hover:after {
   margin-bottom: 4.2rem;
 }
 
-.register{
+.register {
   background-color: yellow;
   color: black;
   text-decoration: none;
@@ -14543,4 +14545,17 @@ blockquote.lgx-testi-single:before {
 
 .my-text {
   color: #fefefe;
+}
+
+.hint {
+  max-width: 75%;
+  text-align: center;
+}
+
+.sc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
 }
